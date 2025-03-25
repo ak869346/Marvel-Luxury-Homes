@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Contact</title>
+    <link rel="stylesheet" href="./contact.css">
+    <style>
+        /* Default navbar */
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        /* Hamburger menu (hidden by default) */
+        .hamburger-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: rgba(0, 0, 0, 0.8);
+                width: 200px;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .hamburger-menu {
+                display: block;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="./index.html" style="text-decoration: none; color: white;">MARVEL LUXURY
+                    HOMES</a></div>
+            <ul class="nav-links">
+                <li><a href="./villas.html">VILLAS</a></li>
+                <li><a href="./About.html">ABOUT US</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class="hamburger-menu">&#9776;</div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="subtitle">
+                We're always here to answer your questions. <br>
+                Reach out and we'll get back to you as soon as possible.
+            </p>
+
+            <div class="contact-content">
+                <div class="image-box">
+                    <img src="./images/contact1.png" alt="Luxury Villa">
+                </div>
+
+                <div class="contact-info">
+                    <h3>Connect with us</h3>
+                    <p><strong>Phone</strong> +00 000 000 00</p>
+                    <p><strong>Email</strong> info@luxuryrentals.com</p>
+                    <p><strong>Address</strong> Name of the street <br> 10 000 City of Somewhere</p>
+                    <a href="#" class="map-link">Open in Google maps</a>
+
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3rd part -->
+
+    <div class="faq-container">
+        <h2 class="faq-title">Frequently asked questions</h2>
+        <p class="faq-subtitle">Everything you need to know about the product and billing.</p>
+
+        <div class="faq-wrapper">
+            <div class="faq-column">
+                <div class="faq-item"><span>+</span>
+                    <p>Where can I find the offer of villa and service prices?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>What is included in the price of Accommodation?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>What is the procedure for arranging and booking Accommodation?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>How do I pay the rest of the Accommodation price, at once or in several installments?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>What if I am late with paying the advance payment or the remaning amount?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>How can I cancel the Accommodation after having paid the advance payment or the remaining amount?
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-column">
+                <div class="faq-item"><span>+</span>
+                    <p>Will I receive a refund of the advance payment or the remaining amount for the Accommodation in
+                        case of cancellation?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>What are the terms of payment by bank transfer and can I pay by credit card?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>Is it possible to rent the villa outside the Saturday to Saturday period?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>Is a deposit required?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>Is it possible to check in before the time period?</p>
+                </div>
+                <div class="faq-item"><span>+</span>
+                    <p>Is it cheaper to book directly through the owner?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 4th Part  -->
+
+    <section class="message-section">
+        <div class="message-box">
+            <h2>We’d love to hear from you</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <textarea placeholder="Message"></textarea>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="policy">
+                    <label for="policy">I accept the Terms and conditions</label>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bottom-container">
+            <div class="info-box">
+                <h3>PREMIUM HOMES</h3>
+                <p>We specialize in luxury rentals, offering exceptional accommodations tailored to your needs.</p>
+                <div class="policy-links">
+                    <a href="#">User Agreement</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Company Info</a>
+                </div>
+            </div>
+            <div class="contact-details">
+                <h4>Reach Out to Us</h4>
+                <p>+00 123 456 78</p>
+                <p>support@premiumhomes.com</p>
+                <div class="social-links">
+                    <span>📷</span>
+                    <span>🌐</span>
+                    <span>✉️</span>
+                    <span>📞</span>
+                </div>
+                <p class="rights">Premium Homes | © All rights reserved 2022-2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Linking JS -->
+
+    <script src="./script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

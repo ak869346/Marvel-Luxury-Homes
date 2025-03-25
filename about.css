@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #ececec;
+}
+
+/* NAVBAR */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 50px;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* Second part css */
+
+.peace-of-mind {
+    /* background: linear-gradient(to bottom, #b8c0c8, #e4dfd9, #ffffff); */
+    background: linear-gradient(0deg, #40E0D0, transparent);
+    padding: 100px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 450px;
+    /* border-radius: 20px; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.text-box {
+    flex: 1;
+}
+
+.text-box h2 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: rufina;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    font-family: raleway;
+    margin-bottom: 15px;
+}
+
+.text-box strong {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .image-box img {
+        max-width: 100%;
+    }
+}
+
+
+/* 3Rd Section */
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #e5e5e5; */
+    background: linear-gradient(0deg, #40E0D0, transparent);
+    padding: 50px;
+    border-radius: 15px;
+    height: 600px;
+}
+
+.about-content {
+    width: 30%;
+    margin-left: 120px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: rufina;
+}
+
+.about-content p {
+    font-family: raleway;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.about-content p strong {
+    font-weight: bold;
+}
+
+.about-content p em {
+    font-style: italic;
+}
+
+.about-cta {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.about-images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.about-images .top-image {
+    width: 36%;
+    /* border-radius: 12px; */
+    position: absolute;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    top: -28px;
+    right: 250px;
+    z-index: 2; /* Ensures it stays on top */
+}
+
+.about-images .bottom-image {
+    width: 50%;
+    /* border-radius: 30px 30px 0 30px; */
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 60px;
+    object-fit: cover;
+    z-index: 1;
+    height: 400px;
+    margin-top: 24px;
+}
+
+
+/* 4th part and Footer */
+/* Contact Section */
+.contact-section {
+    position: relative;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the section takes full viewport height */
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensures full height */
+    background: url('./images/sevensecback.png') no-repeat center center/cover;
+    z-index: 1; /* Moves it behind the content */
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+    padding: 100px 50px;
+    background-color: #E0E0E0;
+    position: relative;
+    margin-bottom: 0; /* Removes extra space */
+    flex-grow: 1; /* Makes sure it stretches to fill available space */
+}
+
+/* Contact Box */
+.contact-box {
+    width: 30%;
+    padding: 40px;
+    /* border-radius: 15px;
+    background-color: #1F1F1F; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 80px;
+    background-color: #181D24;
+    color: white;
+    margin-top: 400px;
+    z-index: 1;
+    height: 300px;
+}
+
+/* Contact Box Text */  
+.contact-box h2 { 
+    margin-bottom: 20px;
+    color: #f5e9d6;
+    font-family: rufina;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.contact-box p {
+    margin-bottom: 10px;
+    font-family: raleway;
+    color: white;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Form Box */
+.form-box {
+    width: 45%;
+    padding: 36px;
+    /* border-radius: 15px;
+    background-color: white; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 400px;
+    z-index: 1;
+    height: 300px;
+}
+
+/* Form Input Styling */
+.form-box h2 {
+    margin-bottom: 20px;
+    font-family: rufina;
+    color: #181D24;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* Checkbox Styling */
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label input {
+    margin-right: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #181d24;
+    color: white;
+    padding: 10px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 5px; */
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E0E0E0;
+    padding: 40px 50px;
+    margin-top: 0; /* Removes extra space */
+}
+
+.footer-left, .footer-right {
+    width: 45%;
+}
+
+.footer-left h3, .footer-right h3 {
+    margin-bottom: 15px;
+}
+
+.footer-right .social-icons img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+/* Responsivness part  */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Navbar - Same as previous page */
+    /* Navbar Adjustments */
+    header {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links */
+    }
+
+    /* Peace of Mind Section */
+    .peace-of-mind {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text-box h2 {
+        font-size: 24px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+    }
+
+    .image-box img {
+        max-width: 100%;
+    }
+
+    /* About Section */
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 5%;
+    }
+
+    .about-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-images {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .about-images .top-image {
+        width: 50%;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .about-images .bottom-image {
+        width: 70%;
+        height: auto;
+    }
+
+    /* Contact Section Fix */
+    .contact-section {
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: start;
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+
+    .contact-box,
+    .form-box {
+        width: 100%;
+        margin-top: 70px;
+        padding: 20px;
+        height: auto; /* Fix the height issue */
+    }
+
+    .contact-box h2,
+    .form-box h2 {
+        font-size: 18px;
+
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+
+    textarea {
+        height: 60px;
+    }
+
+    /* Footer Fix */
+    footer {
+        flex-direction: column;
+        align-items: end;
+        text-align: start;
+        padding: 30px;
+        position: relative;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-right .social-icons {
+        justify-content: center;
+    }
+}
