@@ -744,8 +744,7 @@ footer {
         padding: 20px;
     } */
 
-    /* About Section */
-    .about-section {
+    /* .about-section {
         flex-direction: column;
         text-align: start;
         height: auto;
@@ -774,7 +773,7 @@ footer {
         width: 80%;
         height: auto;
         margin-top: 15px;
-    }
+    } */
 
     /* Contact Section */
     .contact-container {
@@ -898,3 +897,98 @@ footer {
     }
 }
 
+
+/* About us part Fixing for Mobiles */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .about-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 44px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: rufina;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 10px;
+    }
+
+    .about-cta {
+        font-size: 14px;
+        padding: 12px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .about-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .about-images .top-image {
+        width: 45%; /* Adjusted for exact match */
+        max-width: 140px; /* Restrict maximum size */
+        position: absolute;
+        top: -30px;
+        left: 20px;
+        z-index: 2;
+    }
+
+    .about-images .bottom-image {
+        width: 70%; /* Adjusted width */
+        max-width: 300px; /* Restrict max size */
+        height: auto;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 44px;
+        font-family: rufina;
+
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 20px;
+        font-family: raleway;
+    }
+
+    .about-cta {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .about-images .top-image {
+        width: 40%; /* Slightly smaller for mobile */
+        max-width: 160px;
+        height: 225;
+        top: -25px;
+    }
+
+    .about-images .bottom-image {
+        width: 60%;
+        max-width: 260px;
+        height: 300px;
+        margin-top: 40px;
+    }
+}
