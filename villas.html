@@ -2,326 +2,414 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villas</title>
-    <link rel="stylesheet" href="./villas.css">
-    <style>
-        /* Default navbar */
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villas</title>
+  <link rel="stylesheet" href="./villas.css">
 
-        .nav-links li {
-            margin-left: 20px;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rufina:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        /* Hamburger menu (hidden by default) */
-        .hamburger-menu {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-        }
+  <style>
+    /* Default navbar */
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
 
-        /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background: rgba(0, 0, 0, 0.8);
-                width: 200px;
-                padding: 20px;
-                border-radius: 5px;
-            }
+    .nav-links li {
+      margin-left: 20px;
+    }
 
-            .nav-links.active {
-                display: flex;
-            }
+    /* Hamburger menu (hidden by default) */
+    .hamburger-menu {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
 
-            .nav-links li {
-                margin: 10px 0;
-                text-align: center;
-            }
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 200px;
+        padding: 20px;
+        border-radius: 5px;
+      }
 
-            .hamburger-menu {
-                display: block;
-                color: white;
-            }
-        }
-    </style>
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .hamburger-menu {
+        display: block;
+        color: white;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo"><a href="./index.html" style="text-decoration: none; color: white;">MARVEL LUXURY
-                    HOMES</a></div>
-            <ul class="nav-links">
-                <li><a href="./villas.html">VILLAS</a></li>
-                <li><a href="./About.html">ABOUT US</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
+  <header>
+    <nav>
+      <div class="logo"><a href="./index.html" style="text-decoration: none; color: white;">MARVEL LUXURY
+          HOMES</a></div>
+      <ul class="nav-links">
+        <li><a href="./villas.html">VILLAS</a></li>
+        <li><a href="./About.html">ABOUT US</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
 
-            <div class="hamburger-menu">&#9776;</div>
-        </nav>
-    </header>
+      <div class="hamburger-menu">&#9776;</div>
+    </nav>
+  </header>
 
 
-    <section class="hero">
-        <h1>All Villas</h1>
-        <p>124 results</p>
-    </section>
+  <section class="hero">
+    <h1>All Villas</h1>
+    <p>124 results</p>
+  </section>
 
-    <section class="search-filter">
-        <div class="filter-container">
-            <select>
-                <option>Location</option>
-            </select>
-            <input type="date" placeholder="Dates">
-            <select>
-                <option>Guests</option>
-            </select>
-            <select>
-                <option>Price</option>
-            </select>
-            <button>Search 🔍</button>
-        </div>
-    </section>
+  <section class="search-filter">
+    <div class="filter-container">
+      <select>
+        <option>Location</option>
+      </select>
+      <input type="date" placeholder="Dates">
+      <select>
+        <option>Guests</option>
+      </select>
+      <select>
+        <option>Price</option>
+      </select>
+      <button> Search ⌕ </button>
+    </div>
+  </section>
 
+
+  <!-- All Villas -->
+
+  <div class="main-container">
     <div class="villa-container">
-        <!-- Villa Card 1 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa1.png');">
-                <span class="price-tag">From <b>€280 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Italy • Mountains</p>
-                <h3>Villa Makarska</h3>
-                <div class="villa-details">
-                    <span>👤 <b>8</b>guests</span>
-                    <span>🛏️ <b>8</b>bedrooms</span>
-                    <span>📏 <b>460</b>m²</span>
-                    <span>🛁<b>4</b> bathrooms</span>
-                </div>
-            </div>
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/villaluna2.jpg" class="carousel-img active">
+            <img src="./images/villa1.png" class="carousel-img">
+            <img src="./images/villa3.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€350 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
         </div>
 
-        <!-- Villa Card 2 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa2.png');">
-                <span class="price-tag">From <b>€110 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Greece • Seaside</p>
-                <h3>Villa Roxane</h3>
-                <div class="villa-details">
-                    <span>👤 <b>11</b> guests</span>
-                    <span>🛏️ <b>6</b> bedrooms</span>
-                    <span>📏 <b>120</b> m²</span>
-                    <span>🛁 <b>25</b>bathrooms</span>
-                </div>
-            </div>
+        <div class="villa-info">
+          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
+          <h3><a href="./villaLuna.html">Villa Luna</a></h3>
+          <div class="villa-details">
+            <span><i class="fas fa-user" style="color: #918675; margin-right: 8px;"></i> <b style="font-family: 'Raleway';">11</b> guests</span>
+            <span>🛏️ <b>6</b> bedrooms</span>
+            <span>📏 <b>120</b> m²</span>
+            <span>🛁 <b>25</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- second card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/villatosco.png" class="carousel-img active">
+            <img src="./images/villa1.png" class="carousel-img">
+            <img src="./images/villa3.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€350 / daily</b></span>
+            <span class="heart-icon">♥</span>
+          </div>
         </div>
 
-        <!-- Villa Card 3 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa3.png');">
-                <span class="price-tag">From <b>€240 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Greece • Seaside</p>
-                <h3>Aphrodite</h3>
-                <div class="villa-details">
-                    <span>👤 <b>12</b> guests</span>
-                    <span>🛏️ <b>6</b> bedrooms</span>
-                    <span>📏 <b>460</b> m²</span>
-                    <span>🛁 <b>5</b> bathrooms</span>
-                </div>
-            </div>
+        <div class="villa-info">
+          <p class="location">Itlay • &nbsp;<span>Mountains</span></p>
+          <h3><a href="./villaTosca.html">Villa Tosca</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>8</b> guests</span>
+            <span>🛏️ <b>8</b> bedrooms</span>
+            <span>📏 <b>460</b> m²</span>
+            <span>🛁 <b>4</b> bathrooms</span>
+          </div>
         </div>
+      </div>
+
+
+      <!-- 3rd card  -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/Aphrodite.png" class="carousel-img active">
+            <img src="./images/villa1.png" class="carousel-img">
+            <img src="./images/villa2.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€350 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
+          <h3><a href="./Aphrodite.html">Aphrodite</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>12</b> guests</span>
+            <span>🛏️ <b>6</b> bedrooms</span>
+            <span>📏 <b>460</b> m²</span>
+            <span>🛁 <b>5</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/villamakarsha.png" class="carousel-img active">
+            <img src="./images/villa2.png" class="carousel-img">
+            <img src="./images/villa3.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€280 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Itlay • &nbsp;<span>Mountains</span></p>
+          <h3><a href="./villamakarsha.html">Villa Makarsha</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>8</b> guests</span>
+            <span>🛏️ <b>8</b> bedrooms</span>
+            <span>📏 <b>460</b> m²</span>
+            <span>🛁 <b>4</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/villaroxane.png" class="carousel-img active">
+            <img src="./images/villa3.png" class="carousel-img">
+            <img src="./images/villa1.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€110 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
+          <h3><a href="./villaroxane.html">Villa Roxane</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>11</b> guests</span>
+            <span>🛏️ <b>6</b> bedrooms</span>
+            <span>📏 <b>120</b> m²</span>
+            <span>🛁 <b>25</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 6th card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/aphrodite2.png" class="carousel-img active">
+            <img src="./images/villa1.png" class="carousel-img">
+            <img src="./images/villa2.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€240 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
+          <h3><a href="./Aphrodite.html">Aphrodite</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>12</b> guests</span>
+            <span>🛏️ <b>6</b> bedrooms</span>
+            <span>📏 <b>460</b> m²</span>
+            <span>🛁 <b>5</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7th card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/villasunset.png" class="carousel-img active">
+            <img src="./images/villa2.png" class="carousel-img">
+            <img src="./images/villa1.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€280 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Itlay • &nbsp;<span>Mountains</span></p>
+          <h3><a href="./villasunset.html">Villa Sunset</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>8</b> guests</span>
+            <span>🛏️ <b>8</b> bedrooms</span>
+            <span>📏 <b>460</b> m²</span>
+            <span>🛁 <b>4</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8th card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/whitelady.png" class="carousel-img active">
+            <img src="./images/villa1.png" class="carousel-img">
+            <img src="./images/villa3.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€110 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
+          <h3><a href="./villawhitelady.html">White Lady</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>11</b> guests</span>
+            <span>🛏️ <b>6</b> bedrooms</span>
+            <span>📏 <b>120</b> m²</span>
+            <span>🛁 <b>25</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9th card -->
+
+      <div class="villa-card">
+        <div class="villa-img-carousel">
+          <div class="carousel">
+            <img src="./images/thebes.png" class="carousel-img active">
+            <img src="./images/villa2.png" class="carousel-img">
+            <img src="./images/villa3.png" class="carousel-img">
+
+            <span class="price-tag">From <b>€240 / daily</b></span>
+            <span class="heart-icon">♥</span>
+
+          </div>
+        </div>
+
+        <div class="villa-info">
+          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
+          <h3><a href="./villathebes.html">Thebes</a></h3>
+          <div class="villa-details">
+            <span>👤 <b>12</b> guests</span>
+            <span>🛏️ <b>6</b> bedrooms</span>
+            <span>📏 <b>460</b> m²</span>
+            <span>🛁 <b>5</b> bathrooms</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
+  </div>
 
-    <!-- Second Container of Villas -->
 
-    <div class="villa-container" style="margin-top: 20px;">
-        <!-- Villa Card 1 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa1.png');">
-                <span class="price-tag">From <b>€280 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Italy • Mountains</p>
-                <h3>Villa Makarska</h3>
-                <div class="villa-details">
-                    <span>👤 <b>8</b>guests</span>
-                    <span>🛏️ <b>8</b>bedrooms</span>
-                    <span>📏 <b>460</b>m²</span>
-                    <span>🛁<b>4</b> bathrooms</span>
-                </div>
-            </div>
+  <section class="contact-section">
+    <div class="background-image"></div>
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Let’s connect</h2>
+        <p><strong>Phone</strong><br>+385 91 322 8444</p>
+        <p><strong>Email</strong><br>luxury@marvelluxuryhomes.com</p>
+        <p><strong>Address</strong><br>Prospekt Ltd, Drazice 138, 51 000 Rijeka, Croatia</p>
+        <div class="social-icons">
+          <img src="./images/social (4).png" alt="Facebook">
+          <img src="./images/social (3).png" alt="Instagram">
+          <img src="./images/social (2).png" alt="WhatsApp">
         </div>
-
-        <!-- Villa Card 2 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa2.png');">
-                <span class="price-tag">From <b>€110 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Greece • Seaside</p>
-                <h3>Villa Roxane</h3>
-                <div class="villa-details">
-                    <span>👤 <b>11</b> guests</span>
-                    <span>🛏️ <b>6</b> bedrooms</span>
-                    <span>📏 <b>120</b> m²</span>
-                    <span>🛁 <b>25</b>bathrooms</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Villa Card 3 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa3.png');">
-                <span class="price-tag">From <b>€240 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Greece • Seaside</p>
-                <h3>Aphrodite</h3>
-                <div class="villa-details">
-                    <span>👤 <b>12</b> guests</span>
-                    <span>🛏️ <b>6</b> bedrooms</span>
-                    <span>📏 <b>460</b> m²</span>
-                    <span>🛁 <b>5</b> bathrooms</span>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="form-box">
+        <h2>We’d love to hear from you</h2>
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email">
+          </div>
+          <textarea placeholder="Message"></textarea>
+          <label><input type="checkbox"> I accept the Terms and conditions</label>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
     </div>
-
-    <!-- 3rd Container of Villas -->
-
-    <div class="villa-container" style="margin-top: 20px;">
-        <!-- Villa Card 1 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa1.png');">
-                <span class="price-tag">From <b>€280 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Italy • Mountains</p>
-                <h3>Villa Makarska</h3>
-                <div class="villa-details">
-                    <span>👤 <b>8</b>guests</span>
-                    <span>🛏️ <b>8</b>bedrooms</span>
-                    <span>📏 <b>460</b>m²</span>
-                    <span>🛁<b>4</b> bathrooms</span>
-                </div>
-            </div>
+    <footer>
+      <div class="footer-left">
+        <h3>LUXURY RENTALS</h3>
+        <p>We are a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
+        <p>Terms & Conditions | Privacy Policy | Imprint</p>
+      </div>
+      <div class="footer-right">
+        <h3>Connect with us</h3>
+        <p>+00 000 000 00</p>
+        <p>info@marvelluxuryhomes.com</p>
+        <div class="social-icons">
+          <img src="./images/social (4).png" alt="Facebook">
+          <img src="./images/social (3).png" alt="Instagram">
+          <img src="./images/social (2).png" alt="WhatsApp">
         </div>
+        <p>Luxury Rentals. © All rights reserved 2022-2023</p>
+      </div>
+    </footer>
+  </section>
 
-        <!-- Villa Card 2 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa2.png');">
-                <span class="price-tag">From <b>€110 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Greece • Seaside</p>
-                <h3>Villa Roxane</h3>
-                <div class="villa-details">
-                    <span>👤 <b>11</b> guests</span>
-                    <span>🛏️ <b>6</b> bedrooms</span>
-                    <span>📏 <b>120</b> m²</span>
-                    <span>🛁 <b>25</b>bathrooms</span>
-                </div>
-            </div>
-        </div>
+  <!-- Linking JS -->
 
-        <!-- Villa Card 3 -->
-        <div class="villa-card">
-            <div class="villa-img" style="background-image: url('./images/villa3.png');">
-                <span class="price-tag">From <b>€240 / daily</b></span>
-                <span class="heart-icon">♥</span>
-            </div>
-            <div class="villa-info">
-                <p class="location">Greece • Seaside</p>
-                <h3>Aphrodite</h3>
-                <div class="villa-details">
-                    <span>👤 <b>12</b> guests</span>
-                    <span>🛏️ <b>6</b> bedrooms</span>
-                    <span>📏 <b>460</b> m²</span>
-                    <span>🛁 <b>5</b> bathrooms</span>
-                </div>
-            </div>
-        </div>
-    </div>
+  <script src="./script.js"></script>
 
-    <section class="contact-section">
-        <div class="background-image"></div>
-        <div class="contact-container">
-            <div class="contact-box">
-                <h2>Let’s connect</h2>
-                <p><strong>Phone</strong><br>+385 91 322 8444</p>
-                <p><strong>Email</strong><br>luxury@marvelluxuryhomes.com</p>
-                <p><strong>Address</strong><br>Prospekt Ltd, Drazice 138, 51 000 Rijeka, Croatia</p>
-                <div class="social-icons">
-                    <img src="./images/facebook (2).png" alt="Facebook">
-                    <img src="./images/instagram (2).png" alt="Instagram">
-                    <img src="./images/social.png" alt="WhatsApp">
-                </div>
-            </div>
-            <div class="form-box">
-                <h2>We’d love to hear from you</h2>
-                <form>
-                    <div class="input-group">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <textarea placeholder="Message"></textarea>
-                    <label><input type="checkbox"> I accept the Terms and conditions</label>
-                    <button type="submit">SEND</button>
-                </form>
-            </div>
-        </div>
-        <footer>
-            <div class="footer-left">
-                <h3>LUXURY RENTALS</h3>
-                <p>We are a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                </p>
-                <p>Terms & Conditions | Privacy Policy | Imprint</p>
-            </div>
-            <div class="footer-right">
-                <h3>Connect with us</h3>
-                <p>+00 000 000 00</p>
-                <p>info@marvelluxuryhomes.com</p>
-                <div class="social-icons">
-                    <img src="./images/facebook (2).png" alt="Facebook">
-                    <img src="./images/instagram (2).png" alt="Instagram">
-                    <img src="./images/social.png" alt="Pinterest">
-                </div>
-                <p>Luxury Rentals. © All rights reserved 2022-2023</p>
-            </div>
-        </footer>
-    </section>
-
-    <!-- Linking JS -->
-
-    <script src="./script.js"></script>
-
-    <script>
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-    </script>
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("active");
+    }
+  </script>
 
 </body>
 
