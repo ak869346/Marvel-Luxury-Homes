@@ -7,7 +7,8 @@
 
 body {
     /* background-color: #ececec; */
-    background-color: rgba(0, 206, 209, 0.2);;
+    /* background-color: rgba(0, 206, 209, 0.2); */
+    background-color: #e2d6a7;
 }
 
 /* NAVBAR */
@@ -19,8 +20,8 @@ header {
     height: 80px;
     /* background: rgba(0, 0, 0, 0.3); */
     background-color: #030303;
-    opacity: 20%;
-    padding: 15px 50px;
+    opacity: 70%;
+    /* padding: 15px 50px; */
     z-index: 10;
     justify-content: space-between;
 }
@@ -40,6 +41,13 @@ nav {
     font-family: 'Raleway';
     padding-left: 200px;
     padding-top: 12px;
+}
+
+.logo img {
+    height: 70px;
+    /* Adjust height as needed */
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -65,62 +73,124 @@ nav {
 }
 
 
-/* Second part css */
-
 .peace-of-mind {
-    /* background: linear-gradient(to bottom, #b8c0c8, #e4dfd9, #ffffff); */
-    /* background: linear-gradient(0deg, #40E0D0, transparent); */
-    padding: 100px 5%;
-    display: flex;
-    justify-content: center;
+    background: #e2d6a7;
+    /* background-color: white; */
+    padding: 80px 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
-.container {
+.peace-of-mind .container {
     max-width: 1200px;
-    width: 100%;
+    margin: 0 auto;
 }
 
-.content {
+.peace-of-mind .content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    gap: 40px;
+    margin-top: 36px;
 }
 
-.image-box img {
-    width: 100%;
-    max-width: 450px;
-    /* border-radius: 20px; */
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 80px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.text-box {
+.peace-of-mind .image-box {
     flex: 1;
+    min-width: 300px;
 }
 
-.text-box h2 {
-    font-size: 32px;
-    font-weight: bold;
-    font-family: rufina;
-    color: #222;
-    margin-bottom: 15px;
+.peace-of-mind .image-box img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
 }
 
-.text-box p {
-    font-size: 18px;
-    color: #444;
-    line-height: 1.8;
-    font-family: raleway;
-    margin-bottom: 15px;
+.peace-of-mind .text-box {
+    flex: 1;
+    min-width: 300px;
 }
 
-.text-box strong {
-    font-weight: bold;
-    color: #222;
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    /* color: #2c3e50; */
+    color: #181D24;
+}
+
+.section-subtitle {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    /* color: #7f8c8d; */
+    color: #181D24;
+}
+
+.feature {
+    margin-bottom: 14px;
+}
+
+.feature h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    /* color: #2c3e50; */
+    color: #181D24;
+    font-family: "Rufina";
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    /* color: #444; */
+    font-family: "Raleway";
+    color: #181D24;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .peace-of-mind .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .feature h4 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Newly added css */
+
+/* Responsive for mobile/tablets */
+@media (max-width: 768px) {
+    .peace-of-mind .content {
+        flex-direction: column;
+    }
+
+    .peace-of-mind .image-box,
+    .peace-of-mind .text-box {
+        flex: 1 1 100%;
+    }
+
+    .peace-of-mind .image-box img {
+        height: auto;
+        max-height: none;
+    }
+
+    .peace-of-mind h1 {
+        font-size: 26px;
+    }
+
+    .peace-of-mind h2 {
+        font-size: 20px;
+    }
 }
 
 /* Responsive Design */
@@ -133,6 +203,7 @@ nav {
 
     .image-box img {
         max-width: 100%;
+        height: 300px;
     }
 }
 
@@ -142,40 +213,48 @@ nav {
 
 .about-section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background: #e5e5e5; */
-    /* background: linear-gradient(0deg, #40E0D0, transparent); */
-    padding: 50px;
-    border-radius: 15px;
-    height: 600px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 40px;
+    /* background-color: #d8d8d8;  */
+    gap: 60px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
+/* Content Section */
 .about-content {
-    width: 30%;
-    margin-left: 120px;
+    max-width: 600px;
+    flex: 1;
 }
 
 .about-content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-family: rufina;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #181D24;
+    font-family: 'Rufina';
 }
 
 .about-content p {
-    font-family: raleway;
-    font-size: 18px;
-    color: #444;
-    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #181D24;
+    margin-bottom: 16px;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+.about-content p b {
+    font-family: "Raleway";
 }
 
 .about-content p strong {
     font-weight: bold;
+    font-family: 'Raleway';
 }
 
 .about-content p em {
     font-style: italic;
+    font-family: 'Raleway';
 }
 
 .about-cta {
@@ -183,35 +262,41 @@ nav {
     padding: 15px;
     border-radius: 8px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 24px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Rufina';
+    width: 124%;
 }
 
-
 .about-images {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: relative;
+    margin-right: 0px;
 }
 
 .about-images .top-image {
-    width: 36%;
+    width: 280px;
     /* border-radius: 12px; */
     position: absolute;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 6px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    top: -28px;
-    right: 250px;
-    z-index: 2; /* Ensures it stays on top */
+    top: -80px;
+    right: 230px;
+    height: 360px;
+    z-index: 2;
+    /* Ensures it stays on top */
+    border-right: 12px solid white;
+    border-bottom: 12px solid white;
 }
 
 .about-images .bottom-image {
-    width: 50%;
+    width: 70%;
     /* border-radius: 30px 30px 0 30px; */
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -219,9 +304,206 @@ nav {
     border-top-right-radius: 60px;
     object-fit: cover;
     z-index: 1;
-    height: 400px;
+    height: 420px;
     margin-top: 24px;
 }
+
+
+
+/* Fixing Mediaquery */
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 40px;
+        margin-top: 150px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+        font-family: "Rufina";
+    }
+
+    .about-content p {
+        font-size: 15px;
+        font-family: "Raleway";
+    }
+
+    .about-cta {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+
+/* Added section of vision mission css */
+
+
+section.vision-mission {
+    padding: 60px 20px;
+    background-color: #e2d6a7;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-family: "Rufina";
+}
+
+.box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: "Raleway";
+}
+
+.box p b {
+    font-family: "Raleway";
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+
+/* Newly added section css */
+.story-section {
+    padding: 30px 20px;
+    background-color: #e2d6a7;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.story-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    /* Makes image and text the same height */
+    gap: 40px;
+}
+
+.story-image {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    /* Vertically centers image if it’s smaller */
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    /* Match height with text */
+    max-height: 400px;
+    /* Prevents image from becoming too tall */
+    object-fit: cover;
+    /* Maintains aspect ratio and covers space */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.story-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.story-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+}
+
+.story-text blockquote {
+    font-size: 18px;
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding-left: 16px;
+    color: #666;
+    margin: 0;
+    font-family: "Raleway";
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .story-row {
+        flex-direction: column;
+    }
+
+    .story-image,
+    .story-text {
+        flex: 1 1 100%;
+    }
+
+    .story-image img {
+        max-height: none;
+        height: auto;
+    }
+}
+
+
 
 
 /* 4th part and Footer */
@@ -231,7 +513,8 @@ nav {
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Make sure the section takes full viewport height */
+    min-height: 100vh;
+    /* Make sure the section takes full viewport height */
 }
 
 /* Background Image */
@@ -240,9 +523,11 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Ensures full height */
-    background: url('./images/LOAD\ MORE.png') no-repeat center center/cover;
-    z-index: 1; /* Moves it behind the content */
+    height: 100vh;
+    /* Ensures full height */
+    background: url('./images/backgroundimage.png') no-repeat center center/cover;
+    z-index: 1;
+    /* Moves it behind the content */
 }
 
 /* Contact Container */
@@ -252,16 +537,19 @@ nav {
     align-items: flex-start;
     gap: 36px;
     padding: 100px 50px;
-    background-color: #E0E0E0;
+    /* background-color: #E0E0E0; */
+    background-color: #5b656f;
     position: relative;
-    margin-bottom: 0; /* Removes extra space */
-    flex-grow: 1; /* Makes sure it stretches to fill available space */
+    margin-bottom: 0;
+    /* Removes extra space */
+    flex-grow: 1;
+    /* Makes sure it stretches to fill available space */
 }
 
 /* Contact Box */
 .contact-box {
     width: 30%;
-    padding: 40px;
+    padding: 30px;
     /* border-radius: 15px;
     background-color: #1F1F1F; */
     border-bottom-left-radius: 8px;
@@ -270,13 +558,13 @@ nav {
     border-top-right-radius: 80px;
     background-color: #181D24;
     color: white;
-    margin-top: 580px;
+    margin-top: 410px;
     z-index: 1;
     height: 300px;
 }
 
-/* Contact Box Text */  
-.contact-box h2 { 
+/* Contact Box Text */
+.contact-box h2 {
     margin-bottom: 20px;
     color: #f5e9d6;
     font-family: rufina;
@@ -286,7 +574,7 @@ nav {
 
 .contact-box p {
     margin-bottom: 10px;
-    font-family: raleway;
+    font-family: 'Raleway';
     color: white;
 }
 
@@ -307,7 +595,7 @@ nav {
     border-top-right-radius: 8px;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 580px;
+    margin-top: 410px;
     z-index: 1;
     height: 300px;
 }
@@ -327,17 +615,23 @@ nav {
 .input-group input {
     width: 50%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Raleway';
+    color: #5b656f;
 }
 
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 80px;
-    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 16px;
+    min-height: 80px;
+    font-family: 'Raleway';
 }
 
 /* Checkbox Styling */
@@ -345,6 +639,8 @@ label {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    font-family: 'Raleway';
+    font-weight: 400;
 }
 
 label input {
@@ -370,17 +666,40 @@ button {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #E0E0E0;
+    /* background-color: #E0E0E0; */
+    background-color: #5b656f;
     padding: 40px 50px;
-    margin-top: 0; /* Removes extra space */
+    margin-top: 0;
+    /* Removes extra space */
 }
 
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
     width: 45%;
 }
 
-.footer-left h3, .footer-right h3 {
+
+.footer-left h3,
+.footer-right h3 {
     margin-bottom: 15px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: white;
+}
+
+.footer-left,
+.footer-right p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+.footer-left p a {
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway";
 }
 
 .footer-right .social-icons img {
@@ -391,12 +710,123 @@ footer {
 
 /* Responsivness part  */
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Navbar - Same as previous page */
-    /* Navbar Adjustments */
+
+@media (max-width: 1024px) {
+
+    /* Header */
     header {
-        padding: 10px 15px;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .nav-links {
+        padding-right: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+
+    /* About Part */
+
+    /* About Section */
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .about-cta {
+        width: 100%;
+    }
+
+    .about-images {
+        width: 100%;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .about-images .top-image {
+        width: 250px;
+        right: 0;
+        top: -50px;
+    }
+
+    .about-images .bottom-image {
+        width: 80%;
+        height: 350px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .contact-box,
+    .form-box {
+        width: 100%;
+        margin-top: 24px;
+        height: auto;
+    }
+
+    .contact-box h2,
+    .form-box h2 {
+        font-size: 32px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        height: 400px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        height: 85px;
     }
 
     .logo {
@@ -404,119 +834,164 @@ footer {
     }
 
     .nav-links {
-        display: none; /* Hide nav links */
+        display: none;
+        /* Hide nav links for mobile; consider a hamburger menu */
     }
 
-    /* Peace of Mind Section */
+
+    /* second part */
+
     .peace-of-mind {
-        padding: 60px 5%;
-        text-align: center;
-    }
-
-    .content {
-        flex-direction: column;
-        gap: 20px;
+        height: 1020px;
     }
 
     .text-box h2 {
-        font-size: 24px;
+        font-size: 44px;
+        font-family: 'Rufina';
+        color: #181D24;
     }
 
     .text-box p {
-        font-size: 14px;
+        font-size: 16px;
+        font-family: 'Raleway';
+        justify-content: start;
+        text-align: start;
     }
 
-    .image-box img {
-        max-width: 100%;
+    .text-box p strong {
+        font-size: 16px;
+        font-family: 'Raleway';
     }
 
     /* About Section */
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 40px 5%;
+    .about-content h2 {
+        font-size: 44px;
     }
 
-    .about-content {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .about-images {
-        width: 100%;
-        align-items: center;
-        margin-top: 20px;
+    .about-content p {
+        font-size: 14px;
     }
 
     .about-images .top-image {
-        width: 50%;
-        position: relative;
-        right: 0;
-        top: 0;
+        width: 250px;
+        top: -40px;
     }
 
     .about-images .bottom-image {
-        width: 70%;
-        height: auto;
+        width: 90%;
+        height: 300px;
     }
 
-    /* Contact Section Fix */
-    .contact-section {
-        min-height: auto;
-        padding-bottom: 20px;
+    /* Contact Section */
+    .background-image {
+        height: 600px;
     }
 
-    .contact-container {
-        flex-direction: column;
-        align-items: start;
-        padding: 50px 20px;
-        gap: 20px;
-    }
-
-
-    .contact-box,
-    .form-box {
-        width: 100%;
-        margin-top: 70px;
+    /* .contact-box, .form-box {
+        margin-top: 400px;
         padding: 20px;
-        height: auto; /* Fix the height issue */
+    } */
+
+    .contact-box {
+        margin-top: 800px;
     }
 
     .contact-box h2,
     .form-box h2 {
-        font-size: 18px;
-
-    }
-
-    .input-group {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .input-group input {
-        width: 100%;
+        font-size: 28px;
     }
 
     textarea {
-        height: 60px;
+        min-height: 60px;
     }
 
-    /* Footer Fix */
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+/* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* About Section */
+
+    .about-section {
+        height: 1200px;
+    }
+
+    .about-content h2 {
+        font-size: 44px;
+        font-family: 'Rufina';
+        color: #181D24;
+    }
+
+    .about-content p {
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .about-cta {
+        font-size: 20px;
+    }
+
+    .about-images .top-image {
+        width: 180px;
+        top: -30px;
+        right: 210px;
+        height: 250px;
+        border-top-left-radius: 2.65px;
+        border-top-right-radius: 2.65px;
+        border-bottom-right-radius: 2.65px;
+        border-bottom-left-radius: 26.5px;
+    }
+
+    .about-images .bottom-image {
+        height: 350px;
+        /* width: 80%; */
+        margin-left: 36px;
+        border-top-left-radius: 2.65px;
+        border-top-right-radius: 2.65px;
+        border-bottom-right-radius: 2.65px;
+        border-bottom-left-radius: 26.5px;
+    }
+
+    .background-image {
+        height: 700px;
+        background-position: 66% center;
+        background: url('./images/phoneback.png');
+    }
+
+    /* .contact-box, .form-box {
+        margin-top: 300px;
+    } */
+
+    .contact-box {
+        margin-top: 500px;
+    }
+
+    .form-box {
+        height: 500px;
+    }
+
+    .contact-box h2,
+    .form-box h2 {
+        font-size: 24px;
+    }
+
+
     footer {
         flex-direction: column;
-        align-items: end;
+        align-items: start;
         text-align: start;
-        padding: 30px;
-        position: relative;
+        /* height: 400px; */
     }
 
     .footer-left,
     .footer-right {
         width: 100%;
-    }
-
-    .footer-right .social-icons {
-        justify-content: center;
+        margin-bottom: 12px;
     }
 }

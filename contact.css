@@ -7,7 +7,9 @@
 
 body {
     /* background-color: #ececec; */
-    background: linear-gradient(180deg, #40E0D0, transparent);
+    /* background: linear-gradient(180deg, #40E0D0, transparent); */
+    /* background-color: rgba(0, 206, 209, 0.2); */
+    background-color: #e2d6a7;
 }
 
 /* NAVBAR */
@@ -19,8 +21,8 @@ header {
     height: 80px;
     /* background: rgba(0, 0, 0, 0.3); */
     background-color: #030303;
-    opacity: 20%;
-    padding: 15px 50px;
+    opacity: 70%;
+    /* padding: 15px 50px; */
     z-index: 10;
     justify-content: space-between;
 }
@@ -40,6 +42,12 @@ nav {
     font-family: 'Raleway';
     padding-left: 200px;
     padding-top: 12px;
+}
+
+.logo img {
+  height: 70px; /* Adjust height as needed */
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -68,7 +76,7 @@ nav {
 
 .contact-section {
     /* background: linear-gradient(to bottom, #b8c0c8, #e4dfd9, #ffffff); */
-    background: linear-gradient(to bottom, #40E0D0, transparent);
+    /* background: linear-gradient(to bottom, #40E0D0, transparent); */
     padding: 100px 5%;
     text-align: center;
 }
@@ -80,9 +88,10 @@ nav {
 
 .container h2 {
     text-align: center;
-    font-family: rufina;
-    font-size: 60px;
+    font-family: 'Rufina';
+    font-size: 48px;
     font-weight: 700;
+    margin-top: 24px;
 }
 
 /* h2 {
@@ -93,9 +102,11 @@ nav {
 } */
 
 .subtitle {
-    font-size: 16px;
-    color: #555;
+    font-size: 18px;
+    color: #181D24;
     margin-bottom: 50px;
+    font-family: 'Raleway';
+    font-weight: 400;
 }
 
 .contact-content {
@@ -130,6 +141,11 @@ nav {
     font-weight: bold;
     color: #222;
     margin-bottom: 20px;
+    font-family: 'Rufina';
+}
+
+.contact-info strong {
+    font-family: 'Rufina';
 }
 
 .contact-info p {
@@ -137,6 +153,7 @@ nav {
     color: #444;
     line-height: 1.6;
     margin-bottom: 10px;
+    font-family: 'Raleway';
 }
 
 .map-link {
@@ -151,10 +168,10 @@ nav {
     margin-top: 20px;
 }
 
-.social-icons i {
-    font-size: 20px;
-    color: #444;
+.social-icons img {
+    width: 25px;
     margin-right: 10px;
+    justify-content: start;
 }
 
 /* Responsive Design */
@@ -164,91 +181,104 @@ nav {
         text-align: center;
     }
 
-    .image-box img {
+    /* .image-box img {
         border-radius: 20px;
-    }
+    } */
 
     .contact-info {
-        border-radius: 20px;
+        /* border-radius: 20px; */
         text-align: center;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 60px;
     }
 }
 
 
 /* 3rd part */
-
-/* FAQ Section Container */
 .faq-container {
     max-width: 1100px;
-    /* max-width: 100%; */
     margin: auto;
     padding: 50px 20px;
     text-align: center;
-    background: linear-gradient(to top, #40E0D0, transparent);
 }
 
-/* Title Styling */
 .faq-title {
     font-size: 28px;
     font-weight: bold;
     color: #222;
     margin-bottom: 5px;
     text-align: center;
+    font-family: 'Rufina';
 }
 
 .faq-subtitle {
-    font-family: raleway;
+    font-family: 'Raleway';
     font-size: 16px;
     font-weight: 500;
     color: #777;
     margin-bottom: 20px;
 }
 
-/* Two-column layout */
 .faq-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-/* Equal width columns */
 .faq-column {
     flex: 1;
 }
 
-/* FAQ Item Styling */
 .faq-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     padding: 15px;
     border-bottom: 1px solid #ccc;
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
     cursor: pointer;
     text-align: left;
     font-family: rufina;
-    /* background-color: white; */
+    flex-direction: row;
 }
 
 .faq-item span {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: #555;
+    color: #181d24;
     min-width: 20px;
-    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.faq-item p {
+.faq-item.active span {
+    transform: rotate(45deg);
+    /* changes + to x */
+}
+
+.faq-question {
     margin: 0;
-    flex: 1;
-    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Raleway';
 }
 
-/* Hover Effect */
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    color: #181D24;
+    margin-top: 8px;
+    line-height: 1.5;
+    font-family: 'Raleway';
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
 .faq-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
@@ -281,10 +311,10 @@ nav {
     margin-bottom: -120px;
 }
 
-h2 {
-    font-size: 26px;
-    font-weight: bold;
+.message-box h2 {
+    font-family: 'Rufina';
     text-align: left;
+    font-weight: 700;
 }
 
 form {
@@ -305,6 +335,8 @@ form {
     border-bottom: 2px solid #000;
     outline: none;
     font-size: 16px;
+    font-family: 'Raleway';
+    color: #5b656f;
 }
 
 textarea {
@@ -315,6 +347,7 @@ textarea {
     outline: none;
     font-size: 16px;
     min-height: 80px;
+    font-family: 'Raleway';
 }
 
 .checkbox-container {
@@ -327,6 +360,11 @@ textarea {
     margin-right: 5px;
 }
 
+.checkbox-container label {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
 button {
     width: 100px;
     padding: 10px;
@@ -337,13 +375,33 @@ button {
     color: white;
     cursor: pointer;
     font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: 600;
 }
 
 /* Footer Section */
 footer {
-    background: #dcdfe3;
+    /* background: #dcdfe3; */
+    background-color: #5b656f;
     padding: 40px 0;
     height: 400px;
+}
+
+
+.footer-left,
+.footer-right p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #DFE3E7;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+
+.footer-left p a {
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway";
 }
 
 .bottom-container {
@@ -361,12 +419,16 @@ footer {
 
 .info-box h3 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: 'Raleway';
+    color: white;
 }
 
 .info-box p {
     font-size: 14px;
-    color: #555;
+    /* color: #555; */
+    color: white;
+    font-family: 'Raleway';
 }
 
 .policy-links {
@@ -377,8 +439,10 @@ footer {
 
 .policy-links a {
     text-decoration: none;
-    color: #555;
+    /* color: #181D24; */
+    color: white;
     font-size: 14px;
+    font-family: 'Raleway';
 }
 
 .contact-details {
@@ -390,12 +454,20 @@ footer {
 
 .contact-details h4 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Raleway';
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .contact-details p {
     font-size: 14px;
     color: #555;
+    font-family: 'Raleway';
+    color: white;
+    padding-top: 4px; 
+     padding-bottom: 4px;
 }
 
 .social-links {
@@ -415,33 +487,61 @@ footer {
 
 /* Responsive part css */
 
-/* Responsive Design for Contact Page *
+
+@media (max-width: 1024px) {
+    /* Header */
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .nav-links {
+        padding-right: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
 
 /* 🌍 Global Reset for Mobile */
 @media (max-width: 768px) {
-    body {
+    /* body {
         background: linear-gradient(180deg, #40E0D0, transparent);
-    }
+    } */
 
     h2 {
         font-size: 24px;
         text-align: center;
         margin-bottom: 15px;
+        font-family: 'Rufina';
     }
 }
 
 /* 🔹 Navbar Responsive */
 @media (max-width: 768px) {
-    header {
-        padding: 12px 20px;
-    }
 
-    .nav-links {
-        display: none; /* Hide navbar links */
+    /* Header */
+    header {
+        height: 85px;
     }
 
     .logo {
         font-size: 14px;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide nav links for mobile; consider a hamburger menu */
     }
 }
 
@@ -450,33 +550,54 @@ footer {
     .contact-section {
         padding: 60px 5%;
         text-align: center;
+        margin-top: 24px;
+    }
+
+    .contact-section h2 {
+        font-family: 'Rufina';
     }
 
     .contact-content {
         flex-direction: column;
-        gap: 20px;
+        /* gap: 20px; */
     }
 
     .image-box img {
         width: 100%;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        /* height: auto; */
+        height: 350px;
+        /* border-radius: 15px; */
+        border-top-left-radius: 60px;
+        border-top-right-radius: 4px;
+        /* border-bottom-left-radius: 4px;
+        border-top-right-radius: 4px; */
+        /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); */
+        border-bottom-left-radius:0px;
     }
 
     .contact-info {
         max-width: 100%;
         padding: 20px;
-        border-radius: 15px;
+        /* border-radius: 15px; */
         text-align: center;
+        height: 300px;
     }
 
     .contact-info h3 {
-        font-size: 20px;
+        font-size: 36px;
+        font-family: 'Rufina';
     }
 
     .contact-info p {
-        font-size: 14px;
+        font-size: 16px;
+        font-family: 'Raleway';
+        font-weight: 500;
+    }
+
+    .contact-info p strong {
+        font-family: 'Rufina';
+        font-size: 18px;
+        font-weight: 700;
     }
 
     .social-icons i {
@@ -520,15 +641,18 @@ footer {
 
     .message-box {
         width: 90%;
-        padding: 25px;
+        padding-top: 70px;
         border-radius: 15px;
         text-align: center;
-        margin-bottom: -80px;
+        /* margin-bottom: -80px; */
+        margin-bottom: -200px;
+        height: 500px;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 36px;
         text-align: center;
+        font-family: 'Rufina';
     }
 
     .input-group {
@@ -558,7 +682,8 @@ footer {
         padding: 40px 5%;
         height: auto;
         text-align: center;
-        background: #dcdfe3;
+        /* background: #dcdfe3; */
+        background-color: #5b656f;
     }
 
     .bottom-container {
@@ -568,7 +693,7 @@ footer {
     }
 
     .info-box {
-        margin-top: 10px;
+        margin-top: 160px;
         width: 100%;
         text-align: start;
     }
@@ -577,11 +702,13 @@ footer {
         font-size: 16px;
         font-weight: bold;
         text-align: start;
+        color: white;
     }
 
     .info-box p {
         font-size: 14px;
-        color: #555;
+        /* color: #555; */
+        color: white;
         margin-top: 5px;
         text-align: start;
     }
@@ -596,7 +723,8 @@ footer {
 
     .policy-links a {
         font-size: 14px;
-        color: #555;
+        /* color: #555; */
+        color: white;
         text-decoration: none;
     }
 
@@ -609,11 +737,13 @@ footer {
     .contact-details h4 {
         font-size: 16px;
         font-weight: bold;
+        color: white;
     }
 
     .contact-details p {
         font-size: 14px;
-        color: #555;
+        /* color: #555; */
+        color: white;
     }
 
     .social-links {

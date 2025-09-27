@@ -3,11 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Georgia', serif;
+  /* font-family: 'Georgia', serif; */
 }
 
 body {
-  background-color: rgba(166, 124, 0, 0.2);
+  /* background-color: rgba(166, 124, 0, 0.2); */
+  background-color: #e4c247;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -19,8 +25,8 @@ header {
   height: 80px;
   /* background: rgba(0, 0, 0, 0.3); */
   background-color: #030303;
-  opacity: 20%;
-  padding: 15px 50px;
+  opacity: 70%;
+  /* padding: 15px 50px; */
   z-index: 10;
   justify-content: space-between;
 }
@@ -40,6 +46,13 @@ nav {
   font-family: 'Raleway';
   padding-left: 200px;
   padding-top: 12px;
+}
+
+.logo img {
+  height: 70px;
+  /* Adjust height as needed */
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -77,7 +90,7 @@ nav {
 
 
 .villa-section {
-  padding: 120px 40px 30px;
+  padding: 120px 120px 40px;
   /* background-color: rgba(166, 124, 0, 0.2); */
   /* background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(166, 124, 0, 0.2)); */
   font-family: 'Segoe UI', sans-serif;
@@ -169,227 +182,214 @@ nav {
 }
 
 
-/* Third Part CSS */
+/* Added part CSS */
 
-
-.villa-details-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 60px;
-  /* background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(166, 124, 0, 0.2)); */
-  color: #333;
-  font-family: 'Raleway';
-  gap: 40px;
-  max-width: 1480px;
-  margin-inline: auto;
-}
-
-.details-left {
-  flex: 3;
-  /* font-family: 'Georgia', serif; */
-  color: #222;
-}
-
-.details-left h2 {
-  font-size: 36px;
-  margin-bottom: 4px;
-  font-family: 'Rufina';
-}
-
-.details-left .subtext {
-  font-size: 16px;
+.villa-overview {
+  font-family: 'Raleway', sans-serif;
   color: #181D24;
-  margin-bottom: 30px;
-  font-family: 'Raleway';
-  font-weight: 500;
+  padding: 20px 0;
+  line-height: 1.7;
 }
 
-.check-times {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 35px;
-}
-
-.check-item h4 {
-  font-size: 16px;
-  margin-bottom: 3px;
-  color: #181D24;
-  font-weight: 700;
-  font-family: 'Rufina';
-}
-
-.check-item p {
-  font-size: 16px;
-  color: #181D24;
-  font-weight: 500;
-  font-family: 'Raleway';
-}
-
-.category {
-  margin-bottom: 30px;
-}
-
-.category h4 {
-  font-size: 17px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #181D24;
-  font-family: 'Rufina';
-}
-
-.category ul li {
-  font-family: 'Raleway';
-  color: #181D24;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.icon-list {
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-  column-gap: 40px;
-  list-style: none;
-  padding-left: 0;
-  font-size: 14px;
-  color: #181D24;
-  line-height: 1.6;
-}
-
-
-.details-right {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
-/* .contact-card {
-  background-color: #0f0f0f;
-  color: #fff;
-  padding: 30px;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 320px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.contact-card h3 {
+.villa-overview h2 {
   font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.contact-card p {
-  margin: 8px 0;
-  font-size: 14px;
-}
-
-.contact-card .small {
-  font-size: 12px;
-  color: #ccc;
-}
-
-.contact-btn {
-  margin: 15px 0;
-  padding: 10px;
-  width: 100%;
-  background-color: #e9d5b4;
-  color: #111;
-  border: none;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-btn:hover {
-  background-color: #f0e0c0;
-} */
-
-
-.contact-card {
-  background-color: #0f0f0f;
-  color: #fff;
-  padding: 40px 30px;
-  width: 100%;
-  max-width: 350px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 60px;
-}
-
-.contact-card h3 {
-  font-size: 44px;
-  margin-bottom: 25px;
-  font-family: 'Rufina';
-  color: #f5e9d6;
-}
-
-.contact-card p {
-  margin: 8px 0;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'Raleway';
-  font-weight: 500;
-}
-
-.contact-card .small {
-  font-size: 16px;
-  color: #ccc;
-  margin-top: 15px; 
-  font-family: 'Raleway';
-  font-weight: 500;
-}
-
-.contact-btn {
-  margin: 25px 0 10px;
-  padding: 12px;
-  width: 100%;
-  background-color: #f5e9d6;
-  color: #181D24;
-  border: none;
-  font-weight: 600;
-  /* border-radius: 6px; */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  font-family: 'Raleway';
-}
-
-.contact-btn:hover {
-  background-color: #f0e0c0;
-}
-
-
-
-.icon-list li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.icon-list li i {
-  font-size: 14px;
-  color: #a67c00;
+.villa-overview p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* New Flexbox container */
+.overview-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+/* 
+.key-features,
+.amenities {
+  flex: 1;
+}
+
+.key-features ul,
+.amenities ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.key-features ul li,
+.amenities ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+} */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .overview-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .villa-overview h2 {
+    font-size: 18px;
+  }
+
+  .villa-overview p,
+  .villa-overview ul li {
+    font-size: 14px;
+  }
+}
+
+/* Third Part CSS */
+/* Section Styling */
+.property-section {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+.property-section h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-family: "Rufina";
+}
+
+.property-section .subtitle {
+  font-size: 20px;
+  color: #181D24;
+  margin-bottom: 30px;
+  font-family: "Raleway";
+}
+
+/* Grouping of Info */
+.property-info-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.property-basic-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rufina";
+  gap: 15px;
+}
+
+.detail-item {
+  padding-left: 10px;
+  border-left: 3px solid #181D24;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.property-key-features {
+  flex: 1;
+}
+
+.property-key-features strong {
+  font-size: 24px;
+  font-family: "Rufina";
+}
+
+.property-key-features ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.property-key-features li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway";
+}
+
+.property-key-features i {
+  color: #181D24;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+/* Amenities */
+.amenities h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-family: "Rufina";
+}
+
+.amenities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.amenities li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway";
+}
+
+.amenities i {
+  color: #181D24;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* CTA */
+.cta h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-family: "Rufina";
+}
+
+.cta p {
+  font-size: 20px;
+  color: #181D24;
+  font-family: "Raleway";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .property-section h2 {
+    font-size: 26px;
+  }
+
+  .property-section .subtitle,
+  .detail-item,
+  .cta p,
+  .amenities li {
+    font-size: 20px;
+  }
+
+  .amenities i {
+    font-size: 16px;
+  }
+
+  .property-info-group {
+    flex-direction: column;
+  }
 }
 
 
 /* 4th part map section css */
 
 .location-section {
-  max-width: 1450px;
+  max-width: 1525px;
   margin: 60px auto;
-  padding: 0 60px;
+  /* padding: 0 60px; */
+  padding-left: 120px;
+  padding-right: 120px;
   font-family: 'Georgia', serif;
 }
 
@@ -448,6 +448,7 @@ nav {
 
 .calendar-area {
   flex: 3;
+  /* width: 70%; */
 }
 
 .calendar-area h3 {
@@ -461,6 +462,7 @@ nav {
 .months {
   display: flex;
   gap: 40px;
+  /* width: 50%; */
 }
 
 .month p {
@@ -479,7 +481,7 @@ table {
 }
 
 td {
-  padding: 6px;
+  padding: 12px;
   color: #5B656F;
   border-radius: 5px;
   font-family: 'Roboto';
@@ -508,20 +510,30 @@ td {
 
 .price-bar {
   background-color: white;
-  padding: 12px;
+  padding: 6px;
   font-family: 'Raleway';
   font-weight: 500;
+  width: 90%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.price-bar span {
-  
-}
+
 
 .booking-box {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 6px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 4px;
   max-width: 230px;
+  height: 310px;
+  margin-right: 240px;
+  margin-top: 76px;
   flex: 1;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -531,6 +543,7 @@ td {
   margin-bottom: 15px;
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 
 }
 
@@ -557,8 +570,8 @@ td {
 
 .help-text {
   font-size: 12px;
-  color: #444;
-  margin-top: 10px;
+  color: #5B656F;
+  margin-top: 16px;
   text-align: center;
   font-family: 'Raleway';
   font-weight: 600;
@@ -585,7 +598,7 @@ td {
   width: 100%;
   height: 100vh;
   /* Ensures full height */
-  background: url('./images/LOAD\ MORE.png') no-repeat center center/cover;
+  background: url('./images/backgroundimage.png') no-repeat center center/cover;
   z-index: 1;
   /* Moves it behind the content */
 }
@@ -597,7 +610,8 @@ td {
   align-items: flex-start;
   gap: 36px;
   padding: 100px 50px;
-  background-color: #E0E0E0;
+  /* background-color: #E0E0E0; */
+  background-color: #5B656F;
   position: relative;
   margin-bottom: 0;
   /* Removes extra space */
@@ -617,7 +631,7 @@ td {
   background-color: #181D24;
   /* background-color: #1F1F1F; */
   color: white;
-  margin-top: 660px;
+  margin-top: 420px;
   z-index: 1;
   height: 300px;
 }
@@ -626,13 +640,15 @@ td {
 .contact-box h2 {
   margin-bottom: 10px;
   color: #f5e9d6;
-  font-family: rufina;
+  font-family: 'Rufina';
   font-weight: 700;
   font-size: 42px;
 }
 
 .contact-box p {
   margin-bottom: 10px;
+  font-family: 'Raleway';
+  color: white;
 }
 
 .social-icons img {
@@ -652,7 +668,7 @@ td {
   border-top-right-radius: 8px;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 660px;
+  margin-top: 420px;
   z-index: 1;
   height: 300px;
 }
@@ -672,17 +688,23 @@ td {
 .input-group input {
   width: 50%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Raleway';
+  color: #5b656f;
 }
 
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  height: 80px;
-  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 16px;
+  min-height: 80px;
+  font-family: 'Raleway';
 }
 
 /* Checkbox Styling */
@@ -690,6 +712,8 @@ label {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  font-family: 'Raleway';
+  font-weight: 400;
 }
 
 label input {
@@ -715,7 +739,8 @@ button {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: #E0E0E0;
+  /* background-color: #E0E0E0; */
+  background-color: #5B656F;
   padding: 40px 50px;
   margin-top: 0;
   /* Removes extra space */
@@ -729,9 +754,433 @@ footer {
 .footer-left h3,
 .footer-right h3 {
   margin-bottom: 15px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: white;
+}
+
+.footer-left,
+.footer-right p {
+  font-family: 'Raleway';
+  font-weight: 400;
+  color: white;
+}
+
+.footer-left p a {
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway";
 }
 
 .footer-right .social-icons img {
   width: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
+  padding-top: 5px;
+}
+
+/* 
+Responsive design of this page */
+
+/* Media Query for 1024px */
+@media (max-width: 1024px) {
+
+  /* Header */
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .nav-links {
+    padding-right: 20px;
+  }
+
+  .nav-links li {
+    margin-left: 15px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+
+  /* second part */
+
+  .villa-header h1 {
+    font-size: 40px;
+  }
+
+  .villa-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .villa-left,
+  .villa-right {
+    min-width: 100%;
+  }
+
+  .villa-right {
+    grid-template-columns: 1fr;
+  }
+
+  .villa-details-section {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .details-left,
+  .details-right {
+    flex: 1 100%;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .availability-container {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  .booking-box {
+    max-width: 100%;
+  }
+
+  /* Contact Section */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .contact-box,
+  .form-box {
+    width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  .contact-box h2,
+  .form-box h2 {
+    font-size: 32px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    height: 360px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    height: 95px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    display: none;
+    /* Hide nav links for mobile; consider a hamburger menu */
+  }
+
+
+  /* 2nd part */
+
+  .villa-section {
+    width: 100%;
+    padding-top: 96px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .villa-header h1 {
+    font-size: 42px;
+    padding-left: 16px;
+    font-family: 'Rufina';
+    color: #181D24;
+    font-weight: 700;
+  }
+
+  .villa-actions {
+    font-size: 14px;
+    padding-right: 16px;
+    padding-top: 6px;
+    display: none;
+  }
+
+  .villa-details-section {
+    padding: 30px 20px;
+  }
+
+  .details-left h2 {
+    font-size: 28px;
+  }
+
+  .check-times {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .villa-right {
+    display: none;
+  }
+
+
+  .location-section {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .location-section h3 {
+    padding-left: 16px;
+  }
+
+  .booking-box {
+    margin: auto;
+  }
+
+
+  /* Availablity section */
+
+  .availability-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .calendar-area h3 {
+    font-size: 28px;
+  }
+
+  .months {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .booking-box {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+
+  /* Contact Section */
+  .background-image {
+    height: 800px;
+    background-position: 66% center;
+    background: url('./images/updatedbg.png');
+  }
+
+  /* .contact-box, .form-box {
+    margin-top: 400px;
+    padding: 20px;
+} */
+
+  .contact-box {
+    margin-top: 600px;
+  }
+
+  .contact-box h2,
+  .form-box h2 {
+    font-size: 28px;
+  }
+
+  textarea {
+    min-height: 60px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+}
+
+/* Media Query for 480px */
+@media (max-width: 480px) {
+  .villa-header h1 {
+    font-size: 42px;
+    padding-left: 16px;
+    font-family: 'Rufina';
+    color: #181D24;
+    font-weight: 700;
+  }
+
+  .villa-actions {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .villa-details-section {
+    padding: 20px 10px;
+  }
+
+  .details-left h2 {
+    font-size: 20px;
+  }
+
+  .check-item h4,
+  .check-item p {
+    font-size: 14px;
+  }
+
+  .contact-card h3 {
+    font-size: 24px;
+  }
+
+  .location-section h3 {
+    font-size: 24px;
+  }
+
+  .map-container {
+    height: 200px;
+  }
+
+  .availability-container {
+    padding: 0 10px;
+  }
+
+  /* Additional avalablity part */
+
+  .availability-section {
+    padding: 30px 10px;
+  }
+
+  .calendar-area h3 {
+    font-size: 20px;
+  }
+
+  .month p {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .booking-box h4 {
+    font-size: 20px;
+  }
+
+  .booking-btn {
+    font-size: 12px;
+  }
+
+  .help-text {
+    font-size: 10px;
+  }
+
+  .calendar-area {
+    width: 100%;
+  }
+
+  .calendar-area h3 {
+    font-size: 20px;
+  }
+
+  .month {
+    width: 100%;
+  }
+
+  .contact-box h2,
+  .form-box h2 {
+    font-size: 24px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .villa-section,
+  .villa-details-section,
+  .location-section,
+  .availability-section,
+  .contact-section,
+  .contact-container,
+  .footer {
+    width: 100%;
+    /* padding: 0 10px; */
+    box-sizing: border-box;
+  }
+
+  .villa-container,
+  .availability-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+
+  /* Contact Section */
+  .background-image {
+    height: 700px;
+    background-position: 66% center;
+  }
+
+  /* .contact-box, .form-box {
+      margin-top: 300px;
+  } */
+
+  .contact-box {
+    margin-top: 500px;
+  }
+
+  .form-box {
+    height: 500px;
+  }
+
+  .contact-box h2,
+  .form-box h2 {
+    font-size: 24px;
+  }
+
+
+  footer {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    height: 450px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
 }

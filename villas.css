@@ -7,7 +7,9 @@
 
 body {
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent); */
-    background-color: rgba(166, 124, 0, 0.2);
+    /* background-color: rgba(166, 124, 0, 0.2); */
+    /* background-color: #dfAA0f; */
+    background-color: #e4c247;
 }
 
 /* NAVBAR */
@@ -18,9 +20,10 @@ header {
     left: 0;
     height: 80px;
     /* background: rgba(0, 0, 0, 0.3); */
-    background-color: #030303;
-    opacity: 20%;
-    padding: 15px 50px;
+    /* background-color: #030303; */
+    background-color: black;
+    opacity: 70%;
+    /* padding: 15px 50px; */
     z-index: 10;
     justify-content: space-between;
 }
@@ -34,12 +37,18 @@ nav {
 
 .logo {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 800;
     color: #f5f3f1;
     letter-spacing: 2px;
     font-family: 'Raleway';
     padding-left: 200px;
     padding-top: 12px;
+}
+
+.logo img {
+  height: 70px; /* Adjust height as needed */
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -61,7 +70,7 @@ nav {
     text-transform: uppercase;
     font-family: 'Rufina';
     padding: 12px;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 
@@ -82,26 +91,27 @@ nav {
     font-family: 'Rufina';
     font-weight: 700;
 }
+
 .hero p {
     font-size: 16px;
     font-family: 'Raleway';
 }
 
+/* 
 .search-filter {
     display: flex;
     justify-content: center;
     margin: 30px 0 20px;
-    /* background-color: rgba(0, 206, 209, 0.2); */
 }
 
 .filter-container {
     display: flex;
     gap: 10px;
     background: white;
-    /* background: linear-gradient(to bottom, #40E0D0, transparent); */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 900px;
 }
 
 .filter-container select,
@@ -116,12 +126,81 @@ nav {
     background: #444;
     color: white;
     cursor: pointer;
+} */
+
+
+/* New Code  */
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.main-container {
-    height: 1400px;
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    background: white;
+    padding: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-bottom: 10px solid #181D24;
+}
+
+.filter-container select,
+.filter-container input[type="date"] {
+    border: none;
+    padding: 14px 20px;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+    appearance: none;
     width: 100%;
-    margin-top: 36px;
+    cursor: pointer;
+}
+
+.filter-container>* {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+
+.filter-container>*:last-child {
+    border-right: none;
+}
+
+.filter-container button {
+    /* background-color: #5B656F; */
+    background-color: white;
+    color: black;
+    padding: 14px;
+    border: none;
+    /* border-radius: 0 10px 10px 10px; */
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.filter-container button:hover {
+    background-color: #2d343c;
+}
+
+
+
+.main-container {
+    /* height: 1400px; */
+    height: 600px;
+    width: 100%;
+    /* margin-top: 36px; */
 }
 
 /* VILLA CARDS */
@@ -134,6 +213,7 @@ nav {
     margin: 0 auto;
     /* background-color:#bf9b30; */
 }
+
 .villa-card {
     background: white;
     border-top-left-radius: 8px;
@@ -142,9 +222,21 @@ nav {
     border-bottom-left-radius: 8px;
     overflow: hidden;
     width: 330px;
-    height: 436px;
+    /* height: 436px; */
+    height: 480px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 2;
+}
+
+.card-btn {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* Optional: add some spacing from content above */
+    text-align: left;
+    font-size: 16px;
+    background-color: #181D24;
+    font-family: "Raleway";
 }
 
 /* IMAGE CAROUSEL */
@@ -260,7 +352,7 @@ nav {
     gap: 5px;
     font-size: 16px;
     font-family: 'Raleway';
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
@@ -270,6 +362,7 @@ nav {
 .contact-section {
     position: relative;
     background-color: #F5F5F5;
+    /* background-color: #5b656f; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -297,7 +390,8 @@ nav {
     align-items: flex-start;
     gap: 36px;
     padding: 100px 50px;
-    background-color: #E0E0E0;
+    /* background-color: #E0E0E0; */
+    background-color: #5b656f;
     position: relative;
     margin-bottom: 0;
     /* Removes extra space */
@@ -317,7 +411,7 @@ nav {
     background-color: #181D24;
     /* background-color: #1F1F1F; */
     color: white;
-    margin-top: 580px;
+    margin-top: 340px;
     z-index: 1;
     height: 300px;
 }
@@ -333,6 +427,8 @@ nav {
 
 .contact-box p {
     margin-bottom: 10px;
+    font-family: 'Raleway';
+    color: white;
 }
 
 .social-icons img {
@@ -352,7 +448,7 @@ nav {
     border-top-right-radius: 8px;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 580px;
+    margin-top: 340px;
     z-index: 1;
     height: 300px;
 }
@@ -360,7 +456,7 @@ nav {
 /* Form Input Styling */
 .form-box h2 {
     margin-bottom: 20px;
-    font-family: rufina;
+    font-family: 'Rufina';
     color: #181D24;
 }
 
@@ -372,17 +468,23 @@ nav {
 .input-group input {
     width: 50%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Raleway';
+    color: #5b656f;
 }
 
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 80px;
-    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 16px;
+    min-height: 80px;
+    font-family: 'Raleway';
 }
 
 /* Checkbox Styling */
@@ -390,6 +492,8 @@ label {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    font-family: 'Raleway';
+    font-weight: 400;
 }
 
 label input {
@@ -414,8 +518,9 @@ button {
 /* Footer Styling */
 footer {
     display: flex;
-    justify-content: space-between;
-    background-color: #E0E0E0;
+    justify-content: space-evenly;
+    /* background-color: #E0E0E0; */
+    background-color: #5b656f;
     padding: 40px 50px;
     margin-top: 0;
     /* Removes extra space */
@@ -429,22 +534,180 @@ footer {
 .footer-left h3,
 .footer-right h3 {
     margin-bottom: 15px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: #DFE3E7;
 }
 
+.footer-left,
+.footer-right p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #DFE3E7;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+
+.footer-left p a {
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway";
+}
 .footer-right .social-icons img {
     width: 20px;
     margin-right: 10px;
+    padding-top: 5px;
 }
 
 
-/* Responsive part for this page  */
+/* Responsive code */
 
-/* Responsive Design for Mobile (Max 768px) */
+/* Tablets/Landscape Phones (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+    /* Header */
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .nav-links {
+        padding-right: 20px;
+    }
+
+    .nav-links li {
+        margin-left: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .hero {
+        padding: 30px 0;
+        margin-top: 70px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .search-filter {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .filter-container {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 10px 15px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-bottom: 10px solid #181D24;
+    }
+
+    .filter-container select,
+    .filter-container input[type="date"] {
+        display: none; /* Hide all options */
+    }
+
+    .filter-container button {
+        flex: 0 0 auto; /* Allow button to shrink to its content */
+        background-color: white;
+        color: black;
+        padding: 14px;
+        border: none;
+        /* border-radius: 0 10px 10px 10px; */
+        font-size: 14px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: auto; /* Adjust width to fit icon */
+    }
+
+
+
+    .main-container {
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .villa-container {
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .villa-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .contact-box,
+    .form-box {
+        width: 100%;
+        margin-top: 24px;
+        height: auto;
+    }
+
+    .contact-box h2,
+    .form-box h2 {
+        font-size: 36px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        height: 400px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        /* margin-bottom: 20px; */
+    }
+
+}
+
+/* Small Tablets/Phones (max-width: 768px) */
 @media (max-width: 768px) {
 
-    /* Navbar Adjustments */
+    /* Header */
     header {
-        padding: 10px 15px;
+        height: 85px;
     }
 
     .logo {
@@ -453,132 +716,239 @@ footer {
 
     .nav-links {
         display: none;
-        /* Hide nav links */
+        /* Hide nav links for mobile; consider a hamburger menu */
     }
 
-    /* Hero Section */
     .hero {
-        padding: 40px 10px;
+        padding: 20px 0;
+        margin-top: 60px;
     }
 
     .hero h1 {
-        font-size: 22px;
-        padding: 15px;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .hero p {
+        font-size: 14px;
     }
 
     .search-filter {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .filter-container {
-        flex-direction: row;
-        width: 100%;
-        gap: 8px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 10px 15px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-bottom: 10px solid #181D24;
     }
 
     .filter-container select,
-    .filter-container input {
+    .filter-container input[type="date"] {
         display: none;
-        width: 80%;
-        padding: 10px;
     }
 
     .filter-container button {
-        margin-left: 300px;
+        flex: 0 0 auto;
+        background-color: white;
+        color: black;
+        padding: 12px;
+        border: none;
+        /* border-radius: 0 10px 10px 10px; */
+        font-size: 12px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: auto;
     }
 
-    /* Villa Cards */
+    .main-container {
+        height: auto;
+        margin-top: 20px;
+    }
+
     .villa-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 20px;
+        gap: 20px;
+        padding: 0 10px;
     }
 
     .villa-card {
-        width: 95%;
-    }
-
-    .villa-img {
-        height: 180px;
-    }
-
-    .price-tag {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
-    .heart-icon {
-        font-size: 16px;
-    }
-
-    .villa-info {
-        padding: 10px;
-    }
-
-    .villa-details {
-        font-size: 13px;
-    }
-
-    /* Contact Section Fix */
-    .contact-section {
-        min-height: auto;
-        padding-bottom: 20px;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        align-items: start;
-        padding: 50px 20px;
-        gap: 20px;
-    }
-
-
-    .contact-box,
-    .form-box {
         width: 100%;
-        margin-top: 60px;
-        padding: 20px;
         height: auto;
-        /* Fix the height issue */
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .background-image {
+        height: 600px;
+    }
+
+    /* .contact-box, .form-box {
+        margin-top: 400px;
+        padding: 20px;
+    } */
+
+    .contact-box {
+        margin-top: 800px;
     }
 
     .contact-box h2,
     .form-box h2 {
-        font-size: 18px;
-
-    }
-
-    .input-group {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .input-group input {
-        width: 100%;
+        font-size: 28px;
     }
 
     textarea {
-        height: 60px;
+        min-height: 60px;
     }
 
-    /* Footer Fix */
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        /* padding: 5px 10px; */
+        height: 85px;
+    }
+
+    .logo {
+        font-size: 14px;
+        padding-left: 5px;
+        padding-top: 2px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 15px 0;
+        margin-top: 80px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        padding: 8px;
+    }
+
+    .hero p {
+        display: none;
+    }
+
+    .search-filter {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .filter-container {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 8px 12px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-bottom: 10px solid #181D24;
+        justify-content: flex-end;
+    }
+
+    .filter-container select,
+    .filter-container input[type="date"] {
+        display: none;
+    }
+
+    .filter-container button {
+        flex: 0 0 auto;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        border: none;
+        /* border-radius: 0 10px 10px 10px; */
+        font-size: 24px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: auto;
+    }
+
+    .main-container {
+        height: auto;
+        margin-top: 4px;
+    }
+
+    .villa-container {
+        gap: 15px;
+        padding: 0 5px;
+    }
+
+    .villa-card {
+        width: 90%;
+        /* height: auto; */
+        height: 480px;
+        margin-bottom: 15px;
+    }
+
+    /* Contact Section */
+    .background-image {
+        height: 700px;
+        background-position: 66% center;
+        background: url('./images/updatedbg.png');
+    }
+
+    /* .contact-box, .form-box {
+        margin-top: 300px;
+    } */
+
+    .contact-box {
+        margin-top: 500px;
+    }
+
+    .form-box {
+        height: 450px;
+    }
+
+    .contact-box h2,
+    .form-box h2 {
+        font-size: 36px;
+    }
+
+
     footer {
         flex-direction: column;
-        align-items: end;
+        align-items: start;
         text-align: start;
-        padding: 30px;
-        position: relative;
+        height: 450px;
     }
 
-    .footer-left,
-    .footer-right {
+    .footer-left, .footer-right {
         width: 100%;
+        margin-bottom: 12px;
     }
 
-    .footer-right .social-icons {
-        justify-content: center;
+    .footer-left {
+        margin-top: 36px;
     }
 }

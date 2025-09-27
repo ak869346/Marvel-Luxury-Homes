@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Villas</title>
+  <title>Marvel Villas</title>
   <link rel="stylesheet" href="./villas.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,9 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon part -->
+  <link rel="icon" type="image/png" href="./images/logo.png">
 
   <style>
     /* Default navbar */
@@ -41,7 +44,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: black;
         width: 200px;
         padding: 20px;
         border-radius: 5px;
@@ -67,11 +70,14 @@
 <body>
   <header>
     <nav>
-      <div class="logo"><a href="./index.html" style="text-decoration: none; color: white;">MARVEL LUXURY
-          HOMES</a></div>
+      <!-- <div class="logo"><a href="./index.html" style="text-decoration: none; color: white;">MARVEL LUXURY
+          HOMES</a></div> -->
+      <div class="logo"><a href="./index.html"><img src="./images/logo2.png" alt="Marvel-Logo"></a></div>
       <ul class="nav-links">
+        <li><a href="./index.html">HOME</a></li>
         <li><a href="./villas.html">VILLAS</a></li>
         <li><a href="./About.html">ABOUT US</a></li>
+        <li><a href="./CIP.html">CIP</a></li>
         <li><a href="./contact.html">CONTACT</a></li>
       </ul>
 
@@ -81,11 +87,11 @@
 
 
   <section class="hero">
-    <h1>All Villas</h1>
-    <p>124 results</p>
+    <h1>Our Exclusive Portfolio</h1>
+    <!-- <p>124 results</p> -->
   </section>
 
-  <section class="search-filter">
+  <!-- <section class="search-filter">
     <div class="filter-container">
       <select>
         <option>Location</option>
@@ -97,9 +103,9 @@
       <select>
         <option>Price</option>
       </select>
-      <button> Search ⌕ </button>
+      <button> ⌕ </button>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- All Villas -->
@@ -109,26 +115,34 @@
       <div class="villa-card">
         <div class="villa-img-carousel">
           <div class="carousel">
-            <img src="./images/villaluna2.jpg" class="carousel-img active">
-            <img src="./images/villa1.png" class="carousel-img">
-            <img src="./images/villa3.png" class="carousel-img">
+            <img src="./images/Villa 1_1.png" class="carousel-img active">
+            <img src="./images/Villa 1_2.png" class="carousel-img">
+            <img src="./images/VIlla 1_3.png" class="carousel-img">
 
-            <span class="price-tag">From <b>€350 / daily</b></span>
+            <!-- <span class="price-tag">From <b>€110 / daily</b></span> -->
             <span class="heart-icon">♥</span>
-
           </div>
         </div>
 
         <div class="villa-info">
-          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
-          <h3><a href="./villaLuna.html">Villa Luna</a></h3>
+          <p class="location">Antigua • &nbsp;<span>Mountains</span> <span style="font-weight: bold;">12% ROI</span></p>
+          <h3><a href="./villamakarsha.html">Seabreeze Villa</a></h3>
           <div class="villa-details">
-            <span><i class="fas fa-user" style="color: #918675; margin-right: 8px;"></i> <b style="font-family: 'Raleway';">11</b> guests</span>
-            <span>🛏️ <b>6</b> bedrooms</span>
-            <span>📏 <b>120</b> m²</span>
-            <span>🛁 <b>25</b> bathrooms</span>
+            <!-- <span>👤 <b>8</b> guests</span> -->
+            <!-- <span>🛏️ <b>8</b> bedrooms</span>
+                        <span>📏 <b>460</b> m²</span>
+                        <span>🛁 <b>4</b> bathrooms</span> -->
+            <span><img src="./images/guest.png" alt="" style="margin-right: 8px;"> <b
+                style="font-family: 'Raleway';">8</b> guests</span>
+            <span><img src="./images/bed.png" alt="" style="margin-right: 8px;"> </i> <b
+                style="font-family: 'Raleway';">2</b> bedrooms</span>
+            <span><img src="./images/areaicon.png" alt="" style="margin-right: 8px;"></i> <b
+                style="font-family: 'Raleway';">1200</b> Sq ft</span>
+            <span><img src="./images/bathroom.png" alt="" style="margin-right: 8px;"><b
+                style="font-family: 'Raleway';">2</b> bathrooms</span>
           </div>
         </div>
+        <a href="./villamakarsha.html" style="text-decoration: none;"><button class="card-btn">Explore</button></a>
       </div>
 
       <!-- second card -->
@@ -136,25 +150,35 @@
       <div class="villa-card">
         <div class="villa-img-carousel">
           <div class="carousel">
-            <img src="./images/villatosco.png" class="carousel-img active">
-            <img src="./images/villa1.png" class="carousel-img">
-            <img src="./images/villa3.png" class="carousel-img">
+            <img src="./images/Coral Vista.png" class="carousel-img active"
+              style="object-fit: contain; width: 100%; height: auto;">
+            <img src="./images/Coral Vista.png" class="carousel-img"
+              style="object-fit: contain; width: 100%; height: auto;">
+            <img src="./images/Coral Vista.png" class="carousel-img"
+              style="object-fit: contain; width: 100%; height: auto;">
 
-            <span class="price-tag">From <b>€350 / daily</b></span>
+            <!-- <span class="price-tag">From <b>€110 / daily</b></span> -->
             <span class="heart-icon">♥</span>
+
           </div>
         </div>
 
         <div class="villa-info">
-          <p class="location">Itlay • &nbsp;<span>Mountains</span></p>
-          <h3><a href="./villaTosca.html">Villa Tosca</a></h3>
+          <p class="location">Antigua • &nbsp;<span> BeachFront</span> <span style="font-weight: bold;">12% ROI</span></p>
+          <h3><a href="./villaroxane.html">Coral Vista</a></h3>
           <div class="villa-details">
-            <span>👤 <b>8</b> guests</span>
-            <span>🛏️ <b>8</b> bedrooms</span>
-            <span>📏 <b>460</b> m²</span>
-            <span>🛁 <b>4</b> bathrooms</span>
+            <!-- <span><i class="fas fa-user" style="color: #918675; margin-right: 8px;"></i>  <b style="font-family: 'Raleway';">11</b> guests</span> -->
+            <span><img src="./images/guest.png" alt="" style="margin-right: 8px;"><b
+                style="font-family: Raleway;">11</b>Guest</span>
+            <span><img src="./images/bed.png" alt="" style="margin-right: 8px;"> <b
+                style="font-family: 'Raleway';">2</b> bedrooms</span>
+            <span><img src="./images/areaicon.png" alt="" style="margin-right: 8px;"><b
+                style="font-family: 'Raleway';">1200</b> Sq ft</span>
+            <span><img src="./images/bathroom.png" alt="" style="margin-right: 8px;"><b
+                style="font-family: 'Raleway';">2</b> bathrooms</span>
           </div>
         </div>
+        <a href="./villaroxane.html" style="text-decoration: none;"><button class="card-btn">Explore</button></a>
       </div>
 
 
@@ -163,189 +187,33 @@
       <div class="villa-card">
         <div class="villa-img-carousel">
           <div class="carousel">
-            <img src="./images/Aphrodite.png" class="carousel-img active">
-            <img src="./images/villa1.png" class="carousel-img">
-            <img src="./images/villa2.png" class="carousel-img">
+            <img src="./images/Hibiscus Haven.png" class="carousel-img active"
+              style="object-fit: contain; width: 100%; height: auto;">
+            <img src="./images/Hibiscus Haven.png" class="carousel-img"
+              style="object-fit: contain; width: 100%; height: auto;">
+            <img src="./images/Hibiscus Haven.png" class="carousel-img"
+              style="object-fit: contain; width: 100%; height: auto;">
 
-            <span class="price-tag">From <b>€350 / daily</b></span>
+            <!-- <span class="price-tag">From <b>€110 / daily</b></span> -->
             <span class="heart-icon">♥</span>
-
           </div>
         </div>
 
         <div class="villa-info">
-          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
-          <h3><a href="./Aphrodite.html">Aphrodite</a></h3>
+          <p class="location">Antigua • &nbsp;<span>Mountains</span> <span style="font-weight: bold;">12% ROI</span></p>
+          <h3><a href="./Aphrodite.html">Hibiscus Haven</a></h3>
           <div class="villa-details">
-            <span>👤 <b>12</b> guests</span>
-            <span>🛏️ <b>6</b> bedrooms</span>
-            <span>📏 <b>460</b> m²</span>
-            <span>🛁 <b>5</b> bathrooms</span>
+            <span><img src="./images/guest.png" alt="" style="margin-right: 8px;"> <b
+                style="font-family: 'Raleway';">12</b> guests</span>
+            <span><img src="./images/bed.png" alt="" style="margin-right: 8px;"> <b
+                style="font-family: 'Raleway';">2</b> bedrooms</span>
+            <span><img src="./images/areaicon.png" alt="" style="margin-right: 8px;"><b
+                style="font-family: 'Raleway';">1200</b> Sq ft</span>
+            <span><img src="./images/bathroom.png" alt="" style="margin-right: 8px;"><b
+                style="font-family: 'Raleway';">2</b> bathrooms</span>
           </div>
         </div>
-      </div>
-
-      <!-- 4th card -->
-
-      <div class="villa-card">
-        <div class="villa-img-carousel">
-          <div class="carousel">
-            <img src="./images/villamakarsha.png" class="carousel-img active">
-            <img src="./images/villa2.png" class="carousel-img">
-            <img src="./images/villa3.png" class="carousel-img">
-
-            <span class="price-tag">From <b>€280 / daily</b></span>
-            <span class="heart-icon">♥</span>
-
-          </div>
-        </div>
-
-        <div class="villa-info">
-          <p class="location">Itlay • &nbsp;<span>Mountains</span></p>
-          <h3><a href="./villamakarsha.html">Villa Makarsha</a></h3>
-          <div class="villa-details">
-            <span>👤 <b>8</b> guests</span>
-            <span>🛏️ <b>8</b> bedrooms</span>
-            <span>📏 <b>460</b> m²</span>
-            <span>🛁 <b>4</b> bathrooms</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5th card -->
-
-      <div class="villa-card">
-        <div class="villa-img-carousel">
-          <div class="carousel">
-            <img src="./images/villaroxane.png" class="carousel-img active">
-            <img src="./images/villa3.png" class="carousel-img">
-            <img src="./images/villa1.png" class="carousel-img">
-
-            <span class="price-tag">From <b>€110 / daily</b></span>
-            <span class="heart-icon">♥</span>
-
-          </div>
-        </div>
-
-        <div class="villa-info">
-          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
-          <h3><a href="./villaroxane.html">Villa Roxane</a></h3>
-          <div class="villa-details">
-            <span>👤 <b>11</b> guests</span>
-            <span>🛏️ <b>6</b> bedrooms</span>
-            <span>📏 <b>120</b> m²</span>
-            <span>🛁 <b>25</b> bathrooms</span>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- 6th card -->
-
-      <div class="villa-card">
-        <div class="villa-img-carousel">
-          <div class="carousel">
-            <img src="./images/aphrodite2.png" class="carousel-img active">
-            <img src="./images/villa1.png" class="carousel-img">
-            <img src="./images/villa2.png" class="carousel-img">
-
-            <span class="price-tag">From <b>€240 / daily</b></span>
-            <span class="heart-icon">♥</span>
-
-          </div>
-        </div>
-
-        <div class="villa-info">
-          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
-          <h3><a href="./Aphrodite.html">Aphrodite</a></h3>
-          <div class="villa-details">
-            <span>👤 <b>12</b> guests</span>
-            <span>🛏️ <b>6</b> bedrooms</span>
-            <span>📏 <b>460</b> m²</span>
-            <span>🛁 <b>5</b> bathrooms</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 7th card -->
-
-      <div class="villa-card">
-        <div class="villa-img-carousel">
-          <div class="carousel">
-            <img src="./images/villasunset.png" class="carousel-img active">
-            <img src="./images/villa2.png" class="carousel-img">
-            <img src="./images/villa1.png" class="carousel-img">
-
-            <span class="price-tag">From <b>€280 / daily</b></span>
-            <span class="heart-icon">♥</span>
-
-          </div>
-        </div>
-
-        <div class="villa-info">
-          <p class="location">Itlay • &nbsp;<span>Mountains</span></p>
-          <h3><a href="./villasunset.html">Villa Sunset</a></h3>
-          <div class="villa-details">
-            <span>👤 <b>8</b> guests</span>
-            <span>🛏️ <b>8</b> bedrooms</span>
-            <span>📏 <b>460</b> m²</span>
-            <span>🛁 <b>4</b> bathrooms</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 8th card -->
-
-      <div class="villa-card">
-        <div class="villa-img-carousel">
-          <div class="carousel">
-            <img src="./images/whitelady.png" class="carousel-img active">
-            <img src="./images/villa1.png" class="carousel-img">
-            <img src="./images/villa3.png" class="carousel-img">
-
-            <span class="price-tag">From <b>€110 / daily</b></span>
-            <span class="heart-icon">♥</span>
-
-          </div>
-        </div>
-
-        <div class="villa-info">
-          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
-          <h3><a href="./villawhitelady.html">White Lady</a></h3>
-          <div class="villa-details">
-            <span>👤 <b>11</b> guests</span>
-            <span>🛏️ <b>6</b> bedrooms</span>
-            <span>📏 <b>120</b> m²</span>
-            <span>🛁 <b>25</b> bathrooms</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 9th card -->
-
-      <div class="villa-card">
-        <div class="villa-img-carousel">
-          <div class="carousel">
-            <img src="./images/thebes.png" class="carousel-img active">
-            <img src="./images/villa2.png" class="carousel-img">
-            <img src="./images/villa3.png" class="carousel-img">
-
-            <span class="price-tag">From <b>€240 / daily</b></span>
-            <span class="heart-icon">♥</span>
-
-          </div>
-        </div>
-
-        <div class="villa-info">
-          <p class="location">Greece • &nbsp;<span>Seaside</span></p>
-          <h3><a href="./villathebes.html">Thebes</a></h3>
-          <div class="villa-details">
-            <span>👤 <b>12</b> guests</span>
-            <span>🛏️ <b>6</b> bedrooms</span>
-            <span>📏 <b>460</b> m²</span>
-            <span>🛁 <b>5</b> bathrooms</span>
-          </div>
-        </div>
+        <a href="./Aphrodite.html" style="text-decoration: none;"><button class="card-btn">Explore</button></a>
       </div>
 
     </div>
@@ -382,13 +250,18 @@
     </div>
     <footer>
       <div class="footer-left">
-        <h3>LUXURY RENTALS</h3>
-        <p>We are a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        <h3 style="font-weight: 500; font-family:'Raleway';">MARVEL LUXURY</h3>
+        <p style="font-family: Raleway;">Marvel Luxury Homes specializes in crafting exquisite, high-return luxury
+          villas in the heart of
+          Antigua.
         </p>
-        <p>Terms & Conditions | Privacy Policy | Imprint</p>
+        <br>
+        <p style="font-family: Raleway;"> <a href="./About.html">About Us</a> &nbsp; <a href="./villas.html">Our Villas</a> &nbsp;<a href="./termconditionpage.html">Terms &
+            Conditions</a>&nbsp; <a href="">Privacy</a>&nbsp; <a href="">Policy</a> &nbsp;<a href="./contact.html">Contact Us</a>
+          &nbsp;</p>
       </div>
       <div class="footer-right">
-        <h3>Connect with us</h3>
+        <h3 style="font-weight: 700;">Connect with us</h3>
         <p>+00 000 000 00</p>
         <p>info@marvelluxuryhomes.com</p>
         <div class="social-icons">
