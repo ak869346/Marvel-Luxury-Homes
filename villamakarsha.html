@@ -124,7 +124,489 @@
 
         /* Newly added css code */
 
-       
+        /* ================================
+   SECTION WRAPPER
+================================ */
+        .eco-specs {
+            padding: 80px 20px;
+            /* background: linear-gradient(180deg, #f9f7f2 0%, #f2ede8 100%); */
+        }
+
+        .eco-container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        /* ================================
+   TITLE
+================================ */
+        .eco-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2b2117;
+            text-align: start;
+            line-height: 1.3;
+            margin-bottom: 50px;
+            font-family: 'Rufina';
+        }
+
+        /* ================================
+   CONTENT LAYOUT
+================================ */
+        .eco-content {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        /* ================================
+   SPECIFICATIONS TABLE
+================================ */
+        .eco-specs-table {
+            /* background: #fff; */
+            border-radius: 16px;
+            /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); */
+            padding: 25px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            /* border: 1px solid #e8e3dc; */
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom: 1px solid #ece7e0; */
+            padding: 12px 0;
+            font-size: 0.95rem;
+        }
+
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+
+        .spec-row span:first-child {
+            font-weight: 600;
+            /* color: #5b4636; */
+            width: 45%;
+        }
+
+        .spec-row span:last-child {
+            width: 50%;
+            /* color: #3f3428; */
+        }
+
+        /* ================================
+   IMAGE + DESCRIPTION
+================================ */
+        .eco-image-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .eco-image-content img {
+            width: 100%;
+            border-radius: 14px;
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); */
+            transition: transform 0.3s ease;
+        }
+
+        .eco-image-content img:hover {
+            transform: scale(1.03);
+        }
+
+        .eco-desc {
+            font-size: 0.98rem;
+            /* color: #43352a; */
+            text-align: start;
+            /* background: #fff; */
+            padding: 20px 25px;
+            border-radius: 14px;
+            font-family: 'Raleway';
+            line-height: 1.2;
+            text-align: justify;
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+            /* border: 1px solid #e6e0d9; */
+        }
+
+        /* ================================
+   MEDIA QUERIES
+================================ */
+
+
+        /* Second new part css */
+
+        /* ================================
+   SECTION BASE
+================================ */
+        .eco-structure {
+            /* background: linear-gradient(180deg, #faf8f4 0%, #e8e1d7 100%); */
+            padding: 80px 20px;
+            color: #3b2e1f;
+            font-family: "Inter", "Poppins", sans-serif;
+        }
+
+        .eco-structure-container {
+            max-width: 1250px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* ================================
+   LEFT COLUMN CONTENT
+================================ */
+        .eco-structure-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2a1f14;
+            font-family: 'Rufina';
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .eco-structure-intro {
+            font-size: 1rem;
+            color: #4c3d2c;
+            margin-bottom: 35px;
+            text-align: justify;
+            font-family: 'Raleway';
+        }
+
+        .eco-feature {
+            margin-bottom: 28px;
+            padding-left: 10px;
+            border-left: 3px solid #b89c73;
+            transition: all 0.3s ease;
+        }
+
+        .eco-feature:hover {
+            border-left-color: #8d6f44;
+            transform: translateX(5px);
+        }
+
+        .eco-feature h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #2f241a;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+            font-family: 'Rufina';
+        }
+
+        .eco-feature i {
+            color: #213c12;
+            font-size: 1.1rem;
+        }
+
+        .eco-feature p {
+            font-size: 0.95rem;
+            color: #4e3d2d;
+            line-height: 1.6;
+            margin: 0;
+            text-align: justify;
+            font-family: 'Raleway';
+        }
+
+        /* ================================
+   IMAGE SIDE
+================================ */
+        .eco-structure-right {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .eco-structure-image {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .eco-structure-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ================================
+   RESPONSIVENESS
+================================ */
+
+        /* Tablet (≤ 992px) */
+        @media (max-width: 992px) {
+            .eco-structure-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .eco-structure-title {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+
+            .eco-structure-intro {
+                text-align: center;
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+
+            .eco-feature {
+                margin-bottom: 24px;
+            }
+
+            .eco-structure-right {
+                justify-content: center;
+            }
+
+            .eco-structure-image {
+                max-width: 90%;
+            }
+        }
+
+        /* Mobile (≤ 600px) */
+        @media (max-width: 600px) {
+            .eco-structure {
+                padding: 60px 15px;
+            }
+
+            .eco-structure-title {
+                font-size: 1.8rem;
+            }
+
+            .eco-feature h3 {
+                font-size: 1.8rem;
+            }
+
+            .eco-feature p {
+                font-size: 1.5rem;
+            }
+
+            .eco-structure-image {
+                border-radius: 12px;
+            }
+        }
+
+        /* Extra small (≤ 400px) */
+        @media (max-width: 400px) {
+            .eco-structure-title {
+                font-size: 2rem;
+                text-align: start;
+            }
+
+            .eco-feature h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+
+        /* Tablet (max-width: 992px) */
+        @media (max-width: 992px) {
+            .eco-content {
+                grid-template-columns: 1fr;
+            }
+
+            .eco-title {
+                font-size: 1.75rem;
+            }
+
+            .eco-specs-table {
+                padding: 20px;
+            }
+
+            .spec-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .spec-row span:first-child,
+            .spec-row span:last-child {
+                width: 100%;
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Mobile (max-width: 600px) */
+        @media (max-width: 600px) {
+            .eco-specs {
+                padding: 30px 15px;
+            }
+
+            .eco-title {
+                font-size: 1.45rem;
+            }
+
+            .eco-specs-table {
+                border-radius: 12px;
+            }
+
+            .eco-desc {
+                font-size: 1.5rem;
+                padding: 18px;
+            }
+        }
+
+        /* Extra small (max-width: 400px) */
+        @media (max-width: 400px) {
+            .eco-title {
+                font-size: 1.8rem;
+            }
+
+            .spec-row {
+                font-size: 1.5rem;
+                font-family: 'Rufina';
+            }
+        }
+
+
+        /* Third part css code */
+
+        /* ================================
+   SECTION BASE
+================================ */
+        .eco-architecture {
+            /* background: #f4ebd7; */
+            /* color: #3a2a19; */
+            font-family: "Inter", "Poppins", sans-serif;
+            padding: 30px 20px;
+        }
+
+        .eco-architecture-container {
+            max-width: 1250px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* ================================
+   TEXT SECTION
+================================ */
+        .eco-architecture-left {
+            /* background: #f9f5ee; */
+            padding: 40px 50px;
+            border-radius: 16px;
+            /* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e5dccf; */
+        }
+
+        .eco-architecture-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            /* color: #2a1f14; */
+            margin-bottom: 25px;
+            line-height: 1.3;
+            font-family: 'Rufina';
+        }
+
+        .eco-architecture-left p {
+            font-size: 1rem;
+            line-height: 1.5;
+            /* color: #493828; */
+            margin-bottom: 18px;
+            text-align: justify;
+            font-family: 'Raleway';
+        }
+
+        .eco-architecture-left p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ================================
+   IMAGE SECTION
+================================ */
+        .eco-architecture-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .eco-architecture-right img {
+            width: 100%;
+            height: 600px;
+            border-radius: 16px;
+            /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease; */
+        }
+
+        .eco-architecture-right img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ================================
+   RESPONSIVENESS
+================================ */
+
+        /* Tablets (≤ 992px) */
+        @media (max-width: 992px) {
+            .eco-architecture-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .eco-architecture-left {
+                padding: 30px 35px;
+            }
+
+            .eco-architecture-title {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+
+            .eco-architecture-left p {
+                text-align: justify;
+            }
+
+            .eco-architecture-right img {
+                max-width: 90%;
+            }
+        }
+
+        /* Mobiles (≤ 600px) */
+        @media (max-width: 600px) {
+            .eco-architecture {
+                padding: 60px 15px;
+            }
+
+            .eco-architecture-left {
+                padding: 25px 20px;
+            }
+
+            .eco-architecture-title {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+
+            .eco-architecture-left p {
+                font-size: 1.5rem;
+                line-height: 1.6;
+            }
+
+            .eco-architecture-right img {
+                border-radius: 12px;
+            }
+        }
+
+        /* Extra Small Devices (≤ 400px) */
+        @media (max-width: 400px) {
+            .eco-architecture-title {
+                font-size: 1.25rem;
+            }
+
+            .eco-architecture-left p {
+                font-size: 0.9rem;
+            }
+        }
+
 
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
@@ -246,6 +728,164 @@
     </section>
 
 
+    <!-- Newly Added section -->
+
+    <section class="eco-specs">
+        <div class="eco-container">
+            <h2 class="eco-title">Advanced Fabricated Eco-Friendly Construction:<br>Engineering Specifications</h2>
+
+            <div class="eco-content">
+                <div class="eco-specs-table">
+                    <div class="spec-row">
+                        <span>Container Frame</span>
+                        <span>Marine-grade Corten Steel (Grade A)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Structural Integrity</span>
+                        <span>Equivalent to reinforced concrete blocks</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Wind Resistance</span>
+                        <span>Category 5 Hurricane (185+ mph)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Thermal Insulation</span>
+                        <span>R-23 walls, R-30 roof</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Exterior Finish</span>
+                        <span>Premium concrete plastering</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Application Versatility</span>
+                        <span>Residential and commercial structures</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Expected Lifespan</span>
+                        <span>50+ years with minimal maintenance</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Construction Timeline</span>
+                        <span>8–12 weeks (60% faster than traditional)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Warranty Coverage</span>
+                        <span>25-year comprehensive structural</span>
+                    </div>
+                </div>
+
+                <div class="eco-image-content">
+                    <img src="./images/makarshback.png" alt="Container Construction Diagram" />
+                    <p class="eco-desc">
+                        Our innovative fabricated eco-friendly construction technology combines architectural elegance
+                        with superior engineering for both residential and commercial applications. The robust container
+                        frame delivers
+                        strength comparable to traditional concrete block construction, while our specialized plastering
+                        system enhances
+                        resilience and aesthetics. The multi-layer insulation system boosts efficiency by up to 40%,
+                        improving comfort and
+                        sustainability across all project types.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- second new part -->
+
+    <section class="eco-structure">
+        <div class="eco-structure-container">
+            <div class="eco-structure-left">
+                <h2 class="eco-structure-title">Fabricated Eco-Friendly Structures</h2>
+                <p class="eco-structure-intro">
+                    Our revolutionary container-based structures redefine sustainable living and working by combining
+                    environmental responsibility with exceptional strength. Our proprietary concrete plastering
+                    technique transforms recycled shipping containers into resilient residential and commercial
+                    buildings that rival or exceed the durability of traditional concrete block construction.
+                </p>
+
+                <div class="eco-feature">
+                    <h3><i class="fas fa-building"></i> Structural Integrity</h3>
+                    <p>
+                        Each structure harnesses the inherent strength of shipping container steel frames, creating
+                        foundations that withstand extreme weather conditions while diverting up to 35 tons of
+                        industrial-grade steel from landfills per building, whether residential or commercial.
+                    </p>
+                </div>
+
+                <div class="eco-feature">
+                    <h3><i class="fas fa-solar-panel"></i> Solar Integration</h3>
+                    <p>
+                        Our engineered roof systems seamlessly incorporate high-efficiency solar panels for both homes
+                        and commercial properties, capable of reducing electricity bills by up to 90% or achieving
+                        complete energy independence, all anchored by our reinforced container framework.
+                    </p>
+                </div>
+
+                <div class="eco-feature">
+                    <h3><i class="fas fa-layer-group"></i> Concrete Exterior</h3>
+                    <p>
+                        Our advanced concrete plastering process creates a sleek, contemporary exterior that not only
+                        enhances aesthetic appeal but also reinforces structural integrity. The result is a
+                        sophisticated finish that completely transforms industrial containers into elegant residential
+                        and commercial spaces.
+                    </p>
+                </div>
+
+                <div class="eco-feature">
+                    <h3><i class="fas fa-seedling"></i> Sustainable Construction</h3>
+                    <p>
+                        Our precision-engineered fabrication process reduces environmental waste by 60% compared to
+                        conventional building methods, while delivering unmatched strength, ultra-low maintenance
+                        requirements, and exceptional durability that surpass traditional concrete construction.
+                    </p>
+                </div>
+            </div>
+
+            <div class="eco-structure-right">
+                <img src="./images/villa2ndback.png" alt="Modular Container Structures" class="eco-structure-image" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Third new part -->
+
+    <section class="eco-architecture">
+        <div class="eco-architecture-container">
+            <div class="eco-architecture-left">
+                <h2 class="eco-architecture-title">Fabricated Eco-Friendly Structures</h2>
+                <p>
+                    Our revolutionary container-based buildings deliver exceptional structural integrity that surpasses
+                    expectations, rivaling even traditional concrete block construction. By repurposing shipping
+                    containers' robust steel frames, we create foundations for both residential homes and commercial
+                    facilities that are not just sustainable, but remarkably durable.
+                </p>
+                <p>
+                    The transformation continues with our premium concrete plastering technique applied to the exterior,
+                    creating a flawless finish that dramatically enhances both aesthetic appeal and structural
+                    resilience. This specialized process gives our structures the sophisticated appearance and
+                    impressive strength of conventional concrete buildings while preserving the significant ecological
+                    advantages of container repurposing.
+                </p>
+                <p>
+                    From family residences to office complexes and retail spaces, discover the perfect harmony between
+                    industrial-grade strength and contemporary design—environments where sustainability meets luxury,
+                    durability embraces style, and ecological responsibility becomes part of everyday functionality. Our
+                    custom design solutions ensure that both residential and commercial clients achieve their specific
+                    structural and aesthetic goals.
+                </p>
+            </div>
+
+            <div class="eco-architecture-right">
+                <img src="./images/makarsh2ndbakc.png" alt="Eco-Friendly Structure" />
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- 4th section -->
 
     <section class="location-section">
@@ -260,79 +900,9 @@
     </section>
 
 
-    <!-- Newly added section -->
-    <section id="specs-wrapper">
-        <h2>Advanced Fabricated Eco-Friendly Construction:<br>Engineering Specifications</h2>
-
-        <div class="specs-layout">
-            <!-- Left Table Card -->
-            <div class="specs-card">
-                <table class="specs-table">
-                    <tr>
-                        <td>Container Frame</td>
-                        <td>Marine-grade Corten Steel (Grade A)</td>
-                    </tr>
-                    <tr>
-                        <td>Structural Integrity</td>
-                        <td>Equivalent to reinforced concrete blocks</td>
-                    </tr>
-                    <tr>
-                        <td>Wind Resistance</td>
-                        <td>Category 5 Hurricane (185+ mph)</td>
-                    </tr>
-                    <tr>
-                        <td>Thermal Insulation</td>
-                        <td>R-23 walls, R-30 roof</td>
-                    </tr>
-                    <tr>
-                        <td>Exterior Finish</td>
-                        <td>Premium concrete plastering</td>
-                    </tr>
-                    <tr>
-                        <td>Application Versatility</td>
-                        <td>Residential and commercial structures</td>
-                    </tr>
-                    <tr>
-                        <td>Expected Lifespan</td>
-                        <td>50+ years with minimal maintenance</td>
-                    </tr>
-                    <tr>
-                        <td>Construction Timeline</td>
-                        <td>8-12 weeks (60% faster than traditional)</td>
-                    </tr>
-                    <tr>
-                        <td>Warranty Coverage</td>
-                        <td>25-year comprehensive structural</td>
-                    </tr>
-                </table>
-            </div>
-
-            <!-- Right Info Card -->
-            <div class="specs-card specs-info">
-                <div>
-                    <img src="./images/makarshback.png" alt="Engineering Illustration">
-                    <p>
-                        Our innovative fabricated eco-friendly construction technology combines architectural
-                        elegance with superior engineering for both residential and commercial applications.
-                        The robust container frame delivers structural strength comparable to traditional
-                        concrete block construction, while our specialized exterior concrete plastering system
-                        not only transforms the aesthetic but also enhances structural resilience.
-                    </p>
-                    <p>
-                        The proprietary multi-layer insulation system creates an exceptional thermal envelope
-                        that exceeds industry standards by up to 40%, resulting in significant energy savings
-                        and improved interior comfort throughout all seasons. This versatile system adapts
-                        seamlessly to both custom homes and commercial buildings, offering the same durability,
-                        efficiency, and sustainability benefits across all project types.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Newly added section  -->
-    
+
 
     <!-- 5th section -->
 

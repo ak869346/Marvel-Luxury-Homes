@@ -334,6 +334,174 @@ Newly added part */
     font-family: 'Raleway';
 }
 
+
+/* MediaQuery for newly added parts */
+
+/* =======================================
+   ✅ Responsive Media Queries
+   ======================================= */
+
+/* Large Screens (below 1200px) */
+@media (max-width: 1200px) {
+
+    .luxury-content,
+    .dev-content,
+    .eco-content {
+        padding: 60px 40px;
+    }
+
+    .luxury-title,
+    .dev-heading,
+    .eco-heading {
+        font-size: 2.6rem;
+    }
+
+    .luxury-subtitle,
+    .dev-subheading {
+        font-size: 1.8rem;
+    }
+
+    .eco-paragraph,
+    .dev-paragraph,
+    .luxury-text {
+        font-size: 1rem;
+    }
+
+    .dev-image,
+    .eco-image {
+        min-height: 500px;
+    }
+}
+
+/* Medium Devices (below 992px) */
+@media (max-width: 992px) {
+
+    /* Layout: stack image & text vertically */
+    .luxury-wrapper,
+    .dev-section,
+    .eco-section {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    .luxury-content,
+    .dev-content,
+    .eco-content {
+        order: 2;
+        /* content below image on mobile */
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .luxury-image,
+    .dev-image,
+    .eco-image {
+        order: 1;
+        min-height: 350px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Reduce heading sizes */
+    .luxury-title,
+    .dev-heading,
+    .eco-heading {
+        font-size: 2.2rem;
+    }
+
+    .luxury-subtitle,
+    .dev-subheading {
+        font-size: 1.5rem;
+    }
+
+    /* Stats grid adjustments */
+    .eco-stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .eco-stat-box h3,
+    .eco-stat-box h4 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small Devices (below 768px) */
+@media (max-width: 768px) {
+
+    .luxury-content,
+    .dev-content,
+    .eco-content {
+        padding: 30px 15px;
+    }
+
+    .luxury-title,
+    .dev-heading,
+    .eco-heading {
+        font-size: 1.8rem;
+    }
+
+    .luxury-subtitle,
+    .dev-subheading {
+        font-size: 1.3rem;
+    }
+
+    .luxury-text,
+    .dev-paragraph,
+    .eco-paragraph {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .dev-image,
+    .eco-image {
+        min-height: 300px;
+    }
+
+    .eco-stat-box h3,
+    .eco-stat-box h4 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Extra Small Devices (below 480px) */
+@media (max-width: 480px) {
+
+    .luxury-wrapper,
+    .dev-section,
+    .eco-section {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+
+    .luxury-title,
+    .dev-heading,
+    .eco-heading {
+        font-size: 1.5rem;
+    }
+
+    .luxury-subtitle,
+    .dev-subheading {
+        font-size: 1.1rem;
+    }
+
+    .luxury-text,
+    .dev-paragraph,
+    .eco-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .eco-stat-box h3,
+    .eco-stat-box h4 {
+        font-size: 1.2rem;
+    }
+
+    .eco-stats {
+        gap: 15px;
+    }
+}
+
+
 /* TOP PICK VILLAS SECTION */
 .top-pick-villas {
     text-align: center;
@@ -1020,6 +1188,248 @@ section#economic-benefits h2 {
     font-family: 'Raleway';
 }
 
+/* Second Newly added css code */
+
+/* Tablet & Small Screens */
+@media (max-width: 1024px) {
+    .investment-edge {
+        padding: 40px 20px;
+    }
+
+    .investment-container {
+        gap: 40px;
+    }
+
+    .investment-content h2 {
+        font-size: 40px;
+    }
+
+    .investment-content p,
+    .investment-content ul {
+        font-size: 15px;
+    }
+
+    .investment-image img {
+        width: 95%;
+        max-width: 450px;
+    }
+
+    section#economic-benefits h2 {
+        font-size: 40px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .benefit-circle {
+        width: 180px;
+        height: 180px;
+        font-size: 32px;
+        border-width: 6px;
+    }
+
+    .benefit-item h3 {
+        font-size: 24px;
+    }
+
+    .benefit-item p {
+        font-size: 16px;
+    }
+
+    .benefit-content p {
+        font-size: 18px;
+    }
+
+    #services-wrapper h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .services-grid {
+        gap: 60px;
+    }
+
+    .service-box {
+        max-width: 280px;
+        padding: 20px;
+    }
+
+    .service-box h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-box p {
+        font-size: 0.9rem;
+    }
+
+    .service-support {
+        padding: 20px;
+    }
+
+    .service-support h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-support p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .investment-edge {
+        padding: 30px 15px;
+    }
+
+    .investment-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .investment-content h2 {
+        font-size: 28px;
+    }
+
+    .investment-content p,
+    .investment-content ul {
+        font-size: 14px;
+    }
+
+    .investment-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    section#economic-benefits h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .benefit-circle {
+        width: 150px;
+        height: 150px;
+        font-size: 28px;
+        border-width: 5px;
+    }
+
+    .benefit-item h3 {
+        font-size: 22px;
+    }
+
+    .benefit-item p {
+        font-size: 15px;
+    }
+
+    .benefit-content p {
+        font-size: 16px;
+    }
+
+    #services-wrapper h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .service-box {
+        max-width: 100%;
+        padding: 18px;
+    }
+
+    .service-box h3 {
+        font-size: 1rem;
+    }
+
+    .service-box p {
+        font-size: 0.85rem;
+    }
+
+    .service-support {
+        padding: 18px;
+    }
+
+    .service-support h3 {
+        font-size: 1rem;
+    }
+
+    .service-support p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra Small Devices / Phones */
+@media (max-width: 480px) {
+    .investment-edge {
+        padding: 20px 10px;
+    }
+
+    .investment-content h2 {
+        font-size: 24px;
+    }
+
+    .investment-content p,
+    .investment-content ul {
+        font-size: 13px;
+    }
+
+    .investment-image img {
+        width: 100%;
+    }
+
+    section#economic-benefits h2 {
+        font-size: 28px;
+    }
+
+    .benefit-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 22px;
+    }
+
+    .benefit-item h3 {
+        font-size: 20px;
+    }
+
+    .benefit-item p {
+        font-size: 14px;
+    }
+
+    .benefit-content p {
+        font-size: 15px;
+    }
+
+    #services-wrapper h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-box h3 {
+        font-size: 0.95rem;
+    }
+
+    .service-box p {
+        font-size: 0.8rem;
+    }
+
+    .service-support h3 {
+        font-size: 0.95rem;
+    }
+
+    .service-support p {
+        font-size: 0.8rem;
+    }
+}
 
 
 /* 2nd New Section */
